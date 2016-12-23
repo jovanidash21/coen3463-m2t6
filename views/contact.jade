@@ -1,4 +1,51 @@
 extends layout
 
 block content
-    
+    aside#fh5co-hero(clsas="js-fullheight")
+        .flexslider.js-fullheight
+            ul.slides
+                li(style="background-image: url(/images/slider/contact/slide_1.jpg);")
+                    .overlay-gradient
+                    .container
+                        .col-md-10.col-md-offset-1.text-center.js-fullheight.slider-text
+                            .slider-text-inner
+                                h2 Get in touch. Don&apos;t be shy.
+                                p.fh5co-lead
+                                    | Designed with
+                                    i.icon-heart
+                                    |  by the fine folks at
+                                    a(href="http://freehtml5.co", target="_blank") FreeHTML5.co
+    .fh5co-contact.animate-box
+        .container
+            .row
+                .col-md-3
+                    h3 Contact Info.
+                    ul.contact-info
+                        li
+                            i.icon-map
+                            | 198 West 21th Street, Suite 721 New York NY 10016
+                        li
+                            i.icon-phone
+                            | + 1235 2355 98
+                        li
+                            i.icon-envelope
+                            a(href="#") info@yoursite.com
+                        li
+                            i.icon-globe
+                            a(href="#") www.yoursite.com
+                .col-md-8.col-md-push-1.col-sm-12.col-sm-push-0.col-xs-12.col-xs-push-0
+                    .row
+                        .col-md-6
+                            .form-group
+                                input.form-control(placeholder="Name", type="text")
+                        .col-md-6
+                            .form-group
+                                input.form-control(placeholder="Email", type="text")
+                        .col-md-12
+                            .form-group
+                                textarea.form-control(name="", id="", cols="30", rows="7", placeholder="Message")
+                        .col-md-12
+                            .form-group
+                                input.btn.btn-primary(value="Send Message", type="submit")
+    | &#x9;
+    #map.animate-box(data-animate-effect="fadeIn")
