@@ -1,3 +1,123 @@
 extends layout
 
 block content
+    aside#fh5co-hero(clsas="js-fullheight")
+        .flexslider.js-fullheight
+            ul.slides
+                li(style="background-image: url(/images/slider/products/slide_1.jpg);")
+                    .overlay-gradient
+                    .container
+                        .col-md-10.col-md-offset-1.text-center.js-fullheight.slider-text
+                            .slider-text-inner
+                                h2 Our Awesome Products
+                                p.fh5co-lead
+                                    | Designed with
+                                    i.icon-heart
+                                    |  by the fine folks at
+                                    a(href="http://freehtml5.co", target="_blank") FreeHTML5.co
+    #fh5co-grid-products.animate-box
+        .container
+            .row
+                .col-md-6.col-md-offset-3.text-center.fh5co-heading
+                    h2 See our products
+                    p
+                        | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+        .col-1
+            a.item-grid.one(href="#", style="background-image: url(/images/image_4.jpg);")
+                .v-align
+                    .v-align-middle
+                        span.icon
+                            img.img-responsive(src="/images/magnet.svg", alt="Free HTML5 Templates")
+                        h3.title Geographical App
+                        h5.category Web Application
+            a.item-grid.three(href="#", style="background-image: url(/images/image_3.jpg);")
+                .v-align
+                    .v-align-middle
+                        span.icon
+                            img.img-responsive(src="/images/stamp.svg", alt="Free HTML5 Templates")
+                        h3.title Communication App
+                        h5.category Web Application
+        .col-2
+            a.item-grid.two(href="#", style="background-image: url(/images/image_2.jpg);")
+                .v-align
+                    .v-align-middle
+                        span.icon
+                            img.img-responsive(src="/images/camera.svg", alt="Free HTML5 Templates")
+                        h3.title Golf Club Tracker
+                        h5.category Web Application
+        .col-1.reverse
+            a.item-grid.one(href="#", style="background-image: url(/images/image_4.jpg);")
+                .v-align
+                    .v-align-middle
+                        span.icon
+                            img.img-responsive(src="/images/magnet.svg", alt="Free HTML5 Templates")
+                        h3.title Geographical App
+                        h5.category Web Application
+            a.item-grid.three(href="#", style="background-image: url(/images/image_3.jpg);")
+                .v-align
+                    .v-align-middle
+                        span.icon
+                            img.img-responsive(src="/images/compass.svg", alt="Free HTML5 Templates")
+                        h3.title Communication App
+                        h5.category Web Application
+        .col-2.reverse
+            a.item-grid.two(href="#", style="background-image: url(/images/image_2.jpg);")
+                .v-align
+                    .v-align-middle
+                        span.icon
+                            img.img-responsive(src="/images/camera.svg", alt="Free HTML5 Templates")
+                        h3.title Golf Club Tracker
+                        h5.category Web Application
+        #fh5co-blog.animate-box
+            .container
+                .row
+                    .col-md-6.col-md-offset-3.text-center.fh5co-heading
+                        h2
+                            | Latest 
+                            em from
+                            |  Blog
+                        p
+                            | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+            .container
+                .row
+                    .col-md-4
+                        a.fh5co-entry(href="#")
+                            figure
+                                img.img-responsive(src="/images/image_1.jpg", alt="Free Website Template, Free HTML5 Bootstrap Template")
+                            .fh5co-copy
+                                h3 We Create Awesome Free Templates
+                                span.fh5co-date June 8, 2016
+                                p
+                                    | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                    .col-md-4
+                        a.fh5co-entry(href="#")
+                            figure
+                                img.img-responsive(src="/images/image_2.jpg", alt="Free Website Template, Free HTML5 Bootstrap Template")
+                            .fh5co-copy
+                                h3 Handcrafted Using CSS3 &amp; HTML5
+                                span.fh5co-date June 8, 2016
+                                p
+                                    | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                    .col-md-4
+                        a.fh5co-entry(href="#")
+                            figure
+                                img.img-responsive(src="/images/image_3.jpg", alt="Free Website Template, Free HTML5 Bootstrap Template")
+                            .fh5co-copy
+                                h3 We Try To Update The Site Everyday
+                                span.fh5co-date June 8, 2016
+                                p
+                                    | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                    .col-md-12.text-center
+                        p
+                            a.btn.btn-primary.btn-outline.with-arrow(href="#")
+                                | View More Posts
+                                i.icon-arrow-right
+        .fh5co-cta(style="background-image: url(/images/image_3.jpg);")
+            .overlay
+            .container
+                .col-md-12.text-center.animate-box
+                    h3 We Try To Update The Site Everyday
+                    p
+                        a.btn.btn-primary.btn-outline.with-arrow(href="#")
+                            | Get started now!
+                            i.icon-arrow-right
