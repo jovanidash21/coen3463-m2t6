@@ -12,7 +12,10 @@ html
     link(rel="stylesheet", type="text/css", href="/stylesheets/style.css")
     link(rel="stylesheet", type="text/css", href="/stylesheets/custom.css")
   body
-    block content
+    #fh5co-page
+      include templates/nav
+      block content
+      include templates/footer
     script(type="text/javascript", src="/javascripts/modernizr-2.6.2.min.js")
     script(type="text/javascript", src="/javascripts/jquery.min.js")
     script(type="text/javascript", src="/javascripts/jquery.easing.1.3.js")
