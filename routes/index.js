@@ -4,7 +4,7 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', {
     title: 'Screw-IT',
-    sliderData: [
+    slidersData: [
       {
         "backgroundImageURL":"/images/index/slide_1.jpg",
         "headerMessage":"Start Your Startup With This Template",

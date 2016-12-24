@@ -4,7 +4,7 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
     res.render('about', {
         title: 'About | Screw-IT',
-        sliderData: [
+        slidersData: [
             {
                 "backgroundImageURL":"/images/about/slide_1.jpg",
                 "headerMessage":"Who We Are",

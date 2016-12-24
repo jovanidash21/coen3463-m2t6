@@ -1,12 +1,12 @@
 aside#fh5co-hero.js-fullheight
     .flexslider.js-fullheight
         ul.slides
-            each sliderPage, i in sliderData
-                li(style="background-image: url(#{sliderPage.backgroundImageURL});")
+            each sliderData, i in slidersData
+                li(style="background-image: url(#{sliderData.backgroundImageURL});")
                     .overlay-gradient
                     .container
                         .col-md-10.col-md-offset-1.text-center.js-fullheight.slider-text
                             .slider-text-inner
-                                h2= sliderPage.headerMessage
+                                h2= sliderData.headerMessage
                                 p
-                                    a.btn.btn-primary.btn-lg(href="#")= sliderPage.buttonMessage
+                                    a.btn.btn-primary.btn-lg(href="#")= sliderData.buttonMessage
