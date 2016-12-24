@@ -11,90 +11,16 @@ block content
                         | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         | Mauris vitae elit tristique, egestas augue et, auctor nisi.
                         | Praesent eleifend interdum sem at sollicitudin.
-                .col-md-4.text-center.item-block
-                    span.icon
-                        img.img-responsive(src="/images/board.svg", alt="Free HTML5 Templates")
-                    h3 PC Repair & Diagnostic
-                    p
-                        | Donec luctus eros eu arcu molestie, non dignissim dui porta.
-                        | Morbi tempus lorem a viverra aliquet.
-                        | Etiam ultrices odio at lacus blandit, ac porta lorem sollicitudin.
-                    p
-                        a.btn.btn-primary.btn-outline.with-arrow(href="#")
-                            | Learn more
-                            i.icon-arrow-right
-                .col-md-4.text-center.item-block
-                    span.icon
-                        img.img-responsive(src="/images/compass.svg", alt="Free HTML5 Templates")
-                    h3 Hard Disk Restoration
-                    p
-                        | Donec luctus eros eu arcu molestie, non dignissim dui porta.
-                        | Morbi tempus lorem a viverra aliquet.
-                        | Etiam ultrices odio at lacus blandit, ac porta lorem sollicitudin.
-                    p
-                        a.btn.btn-primary.btn-outline.with-arrow(href="#")
-                            | Learn more
-                            i.icon-arrow-right
-                .col-md-4.text-center.item-block
-                    span.icon
-                        img.img-responsive(src="/images/camera.svg", alt="Free HTML5 Templates")
-                    h3 Cartridge Replacement
-                    p
-                        | Donec luctus eros eu arcu molestie, non dignissim dui porta.
-                        | Morbi tempus lorem a viverra aliquet.
-                        | Etiam ultrices odio at lacus blandit, ac porta lorem sollicitudin.
-                    p
-                        a.btn.btn-primary.btn-outline.with-arrow(href="#")
-                            | Learn more
-                            i.icon-arrow-right
-                .col-md-4.text-center.item-block
-                    span.icon
-                        img.img-responsive(src="/images/magnet.svg", alt="Free HTML5 Templates")
-                    h3 Smartphone Setup & Repair
-                    p
-                        | Donec luctus eros eu arcu molestie, non dignissim dui porta.
-                        | Morbi tempus lorem a viverra aliquet.
-                        | Etiam ultrices odio at lacus blandit, ac porta lorem sollicitudin.
-                    p
-                        a.btn.btn-primary.btn-outline.with-arrow(href="#")
-                            | Learn more
-                            i.icon-arrow-right
-                .col-md-4.text-center.item-block
-                    span.icon
-                        img.img-responsive(src="/images/stamp.svg", alt="Free HTML5 Templates")
-                    h3 PC Increase Speed
-                    p
-                        | Donec luctus eros eu arcu molestie, non dignissim dui porta.
-                        | Morbi tempus lorem a viverra aliquet.
-                        | Etiam ultrices odio at lacus blandit, ac porta lorem sollicitudin.
-                    p
-                        a.btn.btn-primary.btn-outline.with-arrow(href="#")
-                            | Learn more
-                            i.icon-arrow-right
-                .col-md-4.text-center.item-block
-                    span.icon
-                        img.img-responsive(src="/images/waterdrop.svg", alt="Free HTML5 Templates")
-                    h3 Network Service
-                    p
-                        | Donec luctus eros eu arcu molestie, non dignissim dui porta.
-                        | Morbi tempus lorem a viverra aliquet.
-                        | Etiam ultrices odio at lacus blandit, ac porta lorem sollicitudin.
-                    p
-                        a.btn.btn-primary.btn-outline.with-arrow(href="#")
-                            | Learn more
-                            i.icon-arrow-right
-    .fh5co-section-with-image
-        img.img-responsive(src="/images/image_1.jpg", alt="")
-        .fh5co-box.animate-box
-            h2 Repair and Support
-            p
-                | Aliquam mattis euismod enim eget scelerisque.
-                | Etiam suscipit risus sed est interdum, ut lacinia massa tincidunt.
-                | Vestibulum dapibus vestibulum vehicula.
-            p
-                a.btn.btn-primary.btn-outline.with-arrow(href="#")
-                    | Get started
-                    i.icon-arrow-right
+                each serviceData, i in servicesData
+                    .col-md-4.text-center.item-block.animate-box
+                        span.icon
+                            img.img-responsive(src="#{serviceData.featuredImage}", alt="Free HTML5 Templates")
+                        h3= serviceData.name
+                        p= serviceData.description
+                        p
+                            a.btn.btn-primary.btn-outline.with-arrow(href="#")
+                                | Learn more
+                                i.icon-arrow-right
     #fh5co-testimonial.animate-box
         .container
             .row
