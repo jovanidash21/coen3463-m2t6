@@ -1,25 +1,12 @@
 aside#fh5co-hero.js-fullheight
     .flexslider.js-fullheight
         ul.slides
-            li(style="background-image: url(/images/slider/index/slide_1.jpg);")
-                .overlay-gradient
-                .container
-                    .col-md-10.col-md-offset-1.text-center.js-fullheight.slider-text
-                        .slider-text-inner
-                            h2 Start Your Startup With This Template
-                            p
-                                a.btn.btn-primary.btn-lg(href="#") Get started
-            li(style="background-image: url(/images/slider/index/slide_2.jpg);")
-                .container
-                    .col-md-10.col-md-offset-1.text-center.js-fullheight.slider-text
-                        .slider-text-inner
-                            h2 Take Your Business To The Next Level
-                            p
-                                a.btn.btn-primary.btn-lg(href="#") Get started
-            li(style="background-image: url(/images/slider/index/slide_3.jpg);")
-                .container
-                    .col-md-10.col-md-offset-1.text-center.js-fullheight.slider-text
-                        .slider-text-inner
-                            h2 We Think Different That Others Can&apos;t
-                            p
-                                a.btn.btn-primary.btn-lg(href="#") Get started
+            each sliderPage, i in sliderData
+                li(style="background-image: url(#{sliderPage.backgroundImageURL});")
+                    .overlay-gradient
+                    .container
+                        .col-md-10.col-md-offset-1.text-center.js-fullheight.slider-text
+                            .slider-text-inner
+                                h2= sliderPage.headerMessage
+                                p
+                                    a.btn.btn-primary.btn-lg(href="#")= sliderPage.buttonMessage
