@@ -15,5 +15,26 @@ router.get('/', function(req, res, next) {
         servicesData: servicesData
     });
 });
+router.get('/:serviceID', function(req, res){
+    var serviceID = req.params.serviceID;
+
+    if (serviceID >= 1 && serviceID <= 6) {
+
+        var serviceData = servicesData[serviceID - 1];
+        var name =  serviceData.name;
+        var sliderBackgroundImage = serviceData.sliderBackgroundImage;
+        var featuredImage = serviceData.featuredImage;
+        var description = serviceData.description;
+        var priceRange = serviceData.priceRange;
+
+        res.render('services-profile', {
+            name: name,
+            sliderBackgroundImage: sliderBackgroundImage,
+            featuredImage: featuredImage,
+            description: description,
+            priceRange: priceRange
+        });
+    }
+});
 
 module.exports = router;

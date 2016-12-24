@@ -1,6 +1,7 @@
 [
   {
     "name":"PC Repair & Diagnostic",
+    "id":"1",
     "sliderBackgroundImage":"/images/services/slide_1.jpg",
     "featuredImage":"/images/board.svg",
     "description":"Donec luctus eros eu arcu molestie, non dignissim dui porta. Morbi tempus lorem a viverra aliquet. Etiam ultrices odio at lacus blandit, ac porta lorem sollicitudin.",
@@ -8,6 +9,7 @@
   },
   {
     "name":"Hard Disk Restoration",
+    "id":"2",
     "sliderBackgroundImage":"/images/services/slide_1.jpg",
     "featuredImage":"/images/waterdrop.svg",
     "description":"Donec luctus eros eu arcu molestie, non dignissim dui porta. Morbi tempus lorem a viverra aliquet. Etiam ultrices odio at lacus blandit, ac porta lorem sollicitudin.",
@@ -15,6 +17,7 @@
   },
   {
     "name":"Cartridge Replacement",
+    "id":"3",
     "sliderBackgroundImage":"/images/services/slide_1.jpg",
     "featuredImage":"/images/compass.svg",
     "description":"Donec luctus eros eu arcu molestie, non dignissim dui porta. Morbi tempus lorem a viverra aliquet. Etiam ultrices odio at lacus blandit, ac porta lorem sollicitudin.",
@@ -22,6 +25,7 @@
   },
   {
     "name":"Smartphone Setup & Repair",
+    "id":"4",
     "sliderBackgroundImage":"/images/services/slide_1.jpg",
     "featuredImage":"/images/camera.svg",
     "description":"Donec luctus eros eu arcu molestie, non dignissim dui porta. Morbi tempus lorem a viverra aliquet. Etiam ultrices odio at lacus blandit, ac porta lorem sollicitudin.",
@@ -29,6 +33,7 @@
   },
   {
     "name":"PC Increase Speed",
+    "id":"5",
     "sliderBackgroundImage":"/images/services/slide_1.jpg",
     "featuredImage":"/images/magnet.svg",
     "description":"Donec luctus eros eu arcu molestie, non dignissim dui porta. Morbi tempus lorem a viverra aliquet. Etiam ultrices odio at lacus blandit, ac porta lorem sollicitudin.",
@@ -36,6 +41,7 @@
   },
   {
     "name":"Network Service",
+    "id":"6",
     "sliderBackgroundImage":"/images/services/slide_1.jpg",
     "featuredImage":"/images/stamp.svg",
     "description":"Donec luctus eros eu arcu molestie, non dignissim dui porta. Morbi tempus lorem a viverra aliquet. Etiam ultrices odio at lacus blandit, ac porta lorem sollicitudin.",

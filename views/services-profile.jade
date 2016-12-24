@@ -1,0 +1,14 @@
+extends layout
+
+block content
+    aside#fh5co-hero.js-fullheight
+        .flexslider.js-fullheight
+            ul.slides
+                li(style="background-image: url(#{sliderBackgroundImage});")
+                    .overlay-gradient
+                    .container
+                        .col-md-10.col-md-offset-1.text-center.js-fullheight.slider-text
+                            .slider-text-inner
+                                h2=name
+                                p
+                                    a.btn.btn-primary.btn-lg(href="#") Read More
