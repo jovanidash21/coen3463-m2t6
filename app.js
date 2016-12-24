@@ -4,7 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var nodeMailer = require('nodemailer');
+var nodemailer = require('nodemailer');
 
 var index = require('./routes/index');
 var products = require('./routes/products');
@@ -31,6 +31,35 @@ app.use('/products', products);
 app.use('/services', services);
 app.use('/about', about);
 app.use('/contact', contact);
+
+app.post('/contact', function (req, res) {
+  var mailOpts, smtpTrans;
+
+  smtpTrans = nodemailer.createTransport('SMTP', {
+    service: 'Gmail',
+    auth: {
+      user: "me@gmail.com",
+      pass: "application-specific-password"
+    }
+  });
+
+  mailOpts = {
+    from: req.body.name + ' &lt;' + req.body.email + '&gt;',
+    to: 'screwittechrepair@gmail.com',
+    subject: 'Website contact form',
+    text: req.body.message
+  };
+  smtpTrans.sendMail(mailOpts, function (error, response) {
+    //Email not sent
+    if (error) {
+      res.render('contact', { title: 'Screw-IT - Contact', msg: 'Error occured, message not sent.', err: true, page: 'contact' })
+    }
+
+    else {
+      res.render('contact', { title: 'Screw-IT - Contact', msg: 'Message sent! Thank you.', err: false, page: 'contact' })
+    }
+  });
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
