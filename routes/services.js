@@ -28,6 +28,7 @@ router.get('/:serviceID', function(req, res){
         var priceRange = serviceData.priceRange;
 
         res.render('services-profile', {
+            title: name,
             name: name,
             sliderBackgroundImage: sliderBackgroundImage,
             featuredImage: featuredImage,

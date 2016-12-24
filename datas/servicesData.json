@@ -3,7 +3,7 @@
     "name":"PC Repair & Diagnostic",
     "id":"1",
     "sliderBackgroundImage":"/images/services/slide_1.jpg",
-    "featuredImage":"/images/board.svg",
+    "featuredImage":"/images/image_1.jpg",
     "description":"Donec luctus eros eu arcu molestie, non dignissim dui porta. Morbi tempus lorem a viverra aliquet. Etiam ultrices odio at lacus blandit, ac porta lorem sollicitudin.",
     "priceRange":"$1000 - $1500"
   },
@@ -11,7 +11,7 @@
     "name":"Hard Disk Restoration",
     "id":"2",
     "sliderBackgroundImage":"/images/services/slide_1.jpg",
-    "featuredImage":"/images/waterdrop.svg",
+    "featuredImage":"/images/image_1.jpg",
     "description":"Donec luctus eros eu arcu molestie, non dignissim dui porta. Morbi tempus lorem a viverra aliquet. Etiam ultrices odio at lacus blandit, ac porta lorem sollicitudin.",
     "priceRange":"$100 - $150"
   },
@@ -19,7 +19,7 @@
     "name":"Cartridge Replacement",
     "id":"3",
     "sliderBackgroundImage":"/images/services/slide_1.jpg",
-    "featuredImage":"/images/compass.svg",
+    "featuredImage":"/images/image_1.jpg",
     "description":"Donec luctus eros eu arcu molestie, non dignissim dui porta. Morbi tempus lorem a viverra aliquet. Etiam ultrices odio at lacus blandit, ac porta lorem sollicitudin.",
     "priceRange":"$50 - $100"
   },
@@ -27,7 +27,7 @@
     "name":"Smartphone Setup & Repair",
     "id":"4",
     "sliderBackgroundImage":"/images/services/slide_1.jpg",
-    "featuredImage":"/images/camera.svg",
+    "featuredImage":"/images/image_1.jpg",
     "description":"Donec luctus eros eu arcu molestie, non dignissim dui porta. Morbi tempus lorem a viverra aliquet. Etiam ultrices odio at lacus blandit, ac porta lorem sollicitudin.",
     "priceRange":"$500 - $1000"
   },
@@ -35,7 +35,7 @@
     "name":"PC Increase Speed",
     "id":"5",
     "sliderBackgroundImage":"/images/services/slide_1.jpg",
-    "featuredImage":"/images/magnet.svg",
+    "featuredImage":"/images/image_1.jpg",
     "description":"Donec luctus eros eu arcu molestie, non dignissim dui porta. Morbi tempus lorem a viverra aliquet. Etiam ultrices odio at lacus blandit, ac porta lorem sollicitudin.",
     "priceRange":"$50 - $100"
   },
@@ -43,7 +43,7 @@
     "name":"Network Service",
     "id":"6",
     "sliderBackgroundImage":"/images/services/slide_1.jpg",
-    "featuredImage":"/images/stamp.svg",
+    "featuredImage":"/images/image_1.jpg",
     "description":"Donec luctus eros eu arcu molestie, non dignissim dui porta. Morbi tempus lorem a viverra aliquet. Etiam ultrices odio at lacus blandit, ac porta lorem sollicitudin.",
     "priceRange":"$200 - $300"
   }
