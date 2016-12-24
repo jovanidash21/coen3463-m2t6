@@ -1,38 +1,44 @@
 [
   {
     "name":"PC Repair & Diagnostic",
+    "sliderBackgroundImage":"/images/services/slide_1.jpg",
     "featuredImage":"/images/board.svg",
     "description":"Donec luctus eros eu arcu molestie, non dignissim dui porta. Morbi tempus lorem a viverra aliquet. Etiam ultrices odio at lacus blandit, ac porta lorem sollicitudin.",
-    "priceRange":"$100 - $200"
+    "priceRange":"$1000 - $1500"
   },
   {
     "name":"Hard Disk Restoration",
+    "sliderBackgroundImage":"/images/services/slide_1.jpg",
     "featuredImage":"/images/waterdrop.svg",
     "description":"Donec luctus eros eu arcu molestie, non dignissim dui porta. Morbi tempus lorem a viverra aliquet. Etiam ultrices odio at lacus blandit, ac porta lorem sollicitudin.",
     "priceRange":"$100 - $150"
   },
   {
     "name":"Cartridge Replacement",
+    "sliderBackgroundImage":"/images/services/slide_1.jpg",
     "featuredImage":"/images/compass.svg",
     "description":"Donec luctus eros eu arcu molestie, non dignissim dui porta. Morbi tempus lorem a viverra aliquet. Etiam ultrices odio at lacus blandit, ac porta lorem sollicitudin.",
-    "priceRange":"$75 - $100"
+    "priceRange":"$50 - $100"
   },
   {
     "name":"Smartphone Setup & Repair",
+    "sliderBackgroundImage":"/images/services/slide_1.jpg",
     "featuredImage":"/images/camera.svg",
     "description":"Donec luctus eros eu arcu molestie, non dignissim dui porta. Morbi tempus lorem a viverra aliquet. Etiam ultrices odio at lacus blandit, ac porta lorem sollicitudin.",
     "priceRange":"$500 - $1000"
   },
   {
     "name":"PC Increase Speed",
+    "sliderBackgroundImage":"/images/services/slide_1.jpg",
     "featuredImage":"/images/magnet.svg",
     "description":"Donec luctus eros eu arcu molestie, non dignissim dui porta. Morbi tempus lorem a viverra aliquet. Etiam ultrices odio at lacus blandit, ac porta lorem sollicitudin.",
-    "priceRange":"$500 - $1000"
+    "priceRange":"$50 - $100"
   },
   {
     "name":"Network Service",
+    "sliderBackgroundImage":"/images/services/slide_1.jpg",
     "featuredImage":"/images/stamp.svg",
     "description":"Donec luctus eros eu arcu molestie, non dignissim dui porta. Morbi tempus lorem a viverra aliquet. Etiam ultrices odio at lacus blandit, ac porta lorem sollicitudin.",
-    "priceRange":"$500 - $1000"
+    "priceRange":"$200 - $300"
   }
 ]
