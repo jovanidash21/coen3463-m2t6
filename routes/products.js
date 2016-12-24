@@ -6,8 +6,8 @@ router.get('/', function(req, res, next) {
         title: 'Products | Screw-IT',
         sliderData: [
             {
-                "backgroundImageURL":"/images/slider/products/slide_1.jpg",
-                "headerMessage":"Start Your Startup With This Template",
+                "backgroundImageURL":"/images/products/slide_1.jpg",
+                "headerMessage":"Our Awesome Products",
                 "buttonMessage":"Get Started"
             }
         ]

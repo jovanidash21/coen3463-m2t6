@@ -6,8 +6,8 @@ router.get('/', function(req, res, next) {
         title: 'Contact | Screw-IT',
         sliderData: [
             {
-                "backgroundImageURL":"/images/slider/contact/slide_1.jpg",
-                "headerMessage":"Start Your Startup With This Template",
+                "backgroundImageURL":"/images/contact/slide_1.jpg",
+                "headerMessage":"Get in touch. Don't be shy.",
                 "buttonMessage":"Get Started"
             }
         ]
