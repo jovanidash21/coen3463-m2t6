@@ -13,12 +13,11 @@ block content
                         | Praesent eleifend interdum sem at sollicitudin.
                 each serviceData, i in servicesData
                     .col-md-4.text-center.item-block.animate-box
-                        span.icon
-                            img.img-responsive(src="#{serviceData.featuredImage}", alt="Free HTML5 Templates")
-                        h3= serviceData.name
+                        img.img-responsive(src="#{serviceData.featuredImage}", alt="Free HTML5 Templates")
+                        h3.service-name = serviceData.name
                         p= serviceData.description
                         p
-                            a.btn.btn-primary.btn-outline.with-arrow(href="#")
+                            a.btn.btn-primary.btn-outline.with-arrow(href="/services/#{servicesData[i].id}")
                                 | Learn more
                                 i.icon-arrow-right
     .fh5co-cta(style="background-image: url(/images/image_3.jpg);")
