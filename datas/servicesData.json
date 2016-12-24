@@ -1,0 +1,38 @@
+[
+  {
+    "name":"PC Repair & Diagnostic",
+    "featuredImage":"/images/board.svg",
+    "description":"Donec luctus eros eu arcu molestie, non dignissim dui porta. Morbi tempus lorem a viverra aliquet. Etiam ultrices odio at lacus blandit, ac porta lorem sollicitudin.",
+    "priceRange":"$100 - $200"
+  },
+  {
+    "name":"Hard Disk Restoration",
+    "featuredImage":"/images/waterdrop.svg",
+    "description":"Donec luctus eros eu arcu molestie, non dignissim dui porta. Morbi tempus lorem a viverra aliquet. Etiam ultrices odio at lacus blandit, ac porta lorem sollicitudin.",
+    "priceRange":"$100 - $150"
+  },
+  {
+    "name":"Cartridge Replacement",
+    "featuredImage":"/images/compass.svg",
+    "description":"Donec luctus eros eu arcu molestie, non dignissim dui porta. Morbi tempus lorem a viverra aliquet. Etiam ultrices odio at lacus blandit, ac porta lorem sollicitudin.",
+    "priceRange":"$75 - $100"
+  },
+  {
+    "name":"Smartphone Setup & Repair",
+    "featuredImage":"/images/camera.svg",
+    "description":"Donec luctus eros eu arcu molestie, non dignissim dui porta. Morbi tempus lorem a viverra aliquet. Etiam ultrices odio at lacus blandit, ac porta lorem sollicitudin.",
+    "priceRange":"$500 - $1000"
+  },
+  {
+    "name":"PC Increase Speed",
+    "featuredImage":"/images/magnet.svg",
+    "description":"Donec luctus eros eu arcu molestie, non dignissim dui porta. Morbi tempus lorem a viverra aliquet. Etiam ultrices odio at lacus blandit, ac porta lorem sollicitudin.",
+    "priceRange":"$500 - $1000"
+  },
+  {
+    "name":"Network Service",
+    "featuredImage":"/images/stamp.svg",
+    "description":"Donec luctus eros eu arcu molestie, non dignissim dui porta. Morbi tempus lorem a viverra aliquet. Etiam ultrices odio at lacus blandit, ac porta lorem sollicitudin.",
+    "priceRange":"$500 - $1000"
+  }
+]
