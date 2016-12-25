@@ -26,8 +26,4 @@ router.get('/', function(req, res, next) {
   });
 });
 
-exports.contact = function(req, res){
-  res.render('contact', { title: 'Screw-IT - Contact', page: 'contact' })
-};
-
 module.exports = router;
