@@ -1,7 +1,7 @@
 extends layout
 
 block content
-    // include templates/slider
+    include templates/slider
     .fh5co-contact.animate-box
         .container
             .row
@@ -22,7 +22,7 @@ block content
                             a(href="#") www.yoursite.com
                 .col-md-8.col-md-push-1.col-sm-12.col-sm-push-0.col-xs-12.col-xs-push-0
                     .row
-                        form(action="/contact/send", method="post")
+                        form(action="/contact", method="post")
                             .col-md-6
                                 .form-group
                                     input.form-control(name="name", value="Jovani", placeholder="Name", type="text", required="")
@@ -35,4 +35,13 @@ block content
                             .col-md-12
                                 .form-group
                                     input.btn.btn-primary(name="submit", value="Send Message", type="submit")
+                    if(typeof alertMessage !== "undefined")
+                        if(!!postError)
+                            .alert.alert-danger.alert-dismissable.fade.in
+                                | #{alertMessage}
+                                a.close(href="#", data-dismiss="alert", aria-label="close") &times;
+                        else
+                            .alert.alert-success.alert-dismissable.fade.in
+                                | #{alertMessage}
+                                a.close(href="#", data-dismiss="alert", aria-label="close") &times;
     #map.animate-box(data-animate-effect="fadeIn")

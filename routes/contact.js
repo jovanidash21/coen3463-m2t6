@@ -1,56 +1,68 @@
 var express = require('express');
 var router = express.Router();
 var nodemailer = require('nodemailer');
+var smtpTransport = require('nodemailer-smtp-transport');
+var xoauth2 = require('xoauth2');
+
+var slidersData = [
+    {
+        "backgroundImageURL":"/images/contact/slide_1.jpg",
+        "headerMessage":"Get in touch. Don't be shy.",
+        "buttonMessage":"Get Started"
+    }
+];
 
 router.get('/', function(req, res, next) {
     res.render('contact', {
         title: 'Contact | Screw-IT',
-        slidersData: [
-            {
-                "backgroundImageURL":"/images/contact/slide_1.jpg",
-                "headerMessage":"Get in touch. Don't be shy.",
-                "buttonMessage":"Get Started"
-            }
-        ]
+        slidersData: slidersData
     });
 });
 
-router.post('/send', function(req, res){
-    var generator = require('xoauth2').createXOAuth2Generator({
-        user: '{username}',
-        clientId: '{Client ID}',
-        clientSecret: '{Client Secret}',
-        refreshToken: '{refresh-token}',
-        accessToken: '{cached access token}' // optional
+router.post('/', function(req, res, next){
+    var generator = xoauth2.createXOAuth2Generator({
+        user: 'screwittechrepair@gmail.com',
+        clientId: ENV["CLIENT_ID"],
+        clientSecret: ENV["CLIENT_SECRET"],
+        refreshToken: ENV["REFRESH_TOKEN"]
     });
-
-    // listen for token updates
-    // you probably want to store these to a db
     generator.on('token', function(token){
         console.log('New token for %s: %s', token.user, token.accessToken);
     });
-
-    // login
-    var transporter = nodemailer.createTransport(({
+    smtpTransport = nodemailer.createTransport({
         service: 'gmail',
         auth: {
             xoauth2: generator
-        }
-    }));
-
-    // send mail
-    transporter.sendMail({
-        from: 'sender@example.com',
-        to: 'receiver@example.com',
-        subject: 'hello world!',
-        text: 'Authenticated with OAuth2'
-    }, function(error, response) {
-        if (error) {
-            console.log(error);
-        } else {
-            console.log('Message sent');
+        },
+        tls: {
+            rejectUnauthorized: false
         }
     });
+    var mailOptions = {
+        from: 'Screw-IT | Visitor ✔ <screwittechrepair@gmail.com>',
+        to: 'screwittechrepair@gmail.com',
+        subject: 'Contact Us | Screw-IT ',
+        text: "Visitor's Contact Form Details... Name: "+req.body.name+" Email: "+req.body.email+" Message: "+req.body.message,
+        html: "<p>Visitor's Contact Form Details:</p><ul><li>Name: "+req.body.name+"</li><li>Email: "+req.body.email+"</li><li>Message: "+req.body.message+"</li></ul>"
+    };
+    smtpTransport.sendMail(mailOptions, function(error, response) {
+        if (error) {
+            res.render('contact', {
+                title: 'Contact | Screw-IT',
+                alertMessage: 'Error occured! Message not sent. Please try again!',
+                postError: true,
+                slidersData: slidersData
+            });
+        }
+        else {
+            res.render('contact', {
+                title: 'Contact | Screw-IT',
+                alertMessage: 'Message sent! Thank you.',
+                postError: false,
+                slidersData: slidersData
+            });
+        }
+        smtpTransport.close();
+    });
 });
-
 module.exports = router;
