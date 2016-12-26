@@ -22,9 +22,9 @@ router.get('/', function(req, res, next) {
 router.post('/', function(req, res, next){
     var generator = xoauth2.createXOAuth2Generator({
         user: 'screwittechrepair@gmail.com',
-        clientId: ENV["CLIENT_ID"],
-        clientSecret: ENV["CLIENT_SECRET"],
-        refreshToken: ENV["REFRESH_TOKEN"]
+        clientId: process.env.CLIENT_ID,
+        clientSecret: process.env.CLIENT_SECRET,
+        refreshToken: process.env.REFRESH_TOKEN
     });
     generator.on('token', function(token){
         console.log('New token for %s: %s', token.user, token.accessToken);
