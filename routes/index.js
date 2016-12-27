@@ -7,20 +7,20 @@ router.get('/', function(req, res, next) {
     title: 'Screw-IT',
     slidersData: [
       {
-        "backgroundImageURL":"/images/index/slide_1.jpg",
+        "backgroundImageURL":"/images/index/slider_1.png",
         "headerTitle":"We provide fast repair service",
         "headerSubtitle":"For your home or business",
         "buttonMessage":"Get Started"
       },
       {
-        "backgroundImageURL":"/images/index/slide_2.jpg",
-        "headerTitle":"Networks got you down?",
+        "backgroundImageURL":"/images/index/slider_2.png",
+        "headerTitle":"Are your networks got you down?",
         "headerSubtitle":"We fix it for you and be connected again",
         "buttonMessage":"Get Started"
       },
       {
-        "backgroundImageURL":"/images/index/slide_3.jpg",
-        "headerTitle":"Running out of ink?",
+        "backgroundImageURL":"/images/index/slider_3.png",
+        "headerTitle":"Are you running out of printer ink?",
         "headerSubtitle":"We've got you refilled",
         "buttonMessage":"Get Started"
       }
