@@ -8,17 +8,20 @@ router.get('/', function(req, res, next) {
     slidersData: [
       {
         "backgroundImageURL":"/images/index/slide_1.jpg",
-        "headerMessage":"Start Your Startup With This Template",
+        "headerTitle":"We provide fast repair service",
+        "headerSubtitle":"For your home or business.",
         "buttonMessage":"Get Started"
       },
       {
         "backgroundImageURL":"/images/index/slide_2.jpg",
-        "headerMessage":"Take Your Business To The Next Level",
+        "headerTitle":"Networks got you down?",
+        "headerSubtitle":"We fix it for you and be connected again.",
         "buttonMessage":"Get Started"
       },
       {
         "backgroundImageURL":"/images/index/slide_3.jpg",
-        "headerMessage":"We Think Different That Others Can't",
+        "headerTitle":"Running out of ink?",
+        "headerSubtitle":"We've got you refilled.",
         "buttonMessage":"Get Started"
       }
     ],

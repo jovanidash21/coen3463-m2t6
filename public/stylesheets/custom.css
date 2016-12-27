@@ -1,4 +1,17 @@
-h3.service-name
+#fh5co-hero .flexslider .slider-text > .slider-text-inner h3
 {
-    margin: 30px 0;
+    font-size: 45px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+#fh5co-why-us .item-block h3
+{
+    margin: 25px 0;
+}
+@media screen and (max-width: 768px)
+{
+    #fh5co-hero .flexslider .slider-text > .slider-text-inner h3
+    {
+        font-size: 30px;
+    }
 }

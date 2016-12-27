@@ -8,7 +8,8 @@ router.get('/', function(req, res, next) {
         slidersData: [
             {
                 "backgroundImageURL":"/images/services/slide_1.jpg",
-                "headerMessage":"Our Expertise",
+                "headerTitle":"Our Expertise",
+                "headerSubtitle":"We offer professional services",
                 "buttonMessage":"Get Started"
             }
         ],
