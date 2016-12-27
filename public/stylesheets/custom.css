@@ -1,10 +1,21 @@
+#fh5co-hero .flexslider .slider-text > .slider-text-inner h2,
 #fh5co-hero .flexslider .slider-text > .slider-text-inner h3
 {
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+#fh5co-hero .flexslider .slider-text > .slider-text-inner h2
+{
+    text-transform: uppercase;
+}
+#fh5co-hero .flexslider .slider-text > .slider-text-inner h3
+{
+    color: rgb(255, 255, 255);
     font-size: 45px;
     font-weight: 400;
-    color: rgb(255, 255, 255);
+    text-transform: lowercase;
 }
-#fh5co-why-us .item-block h3
+#fh5co-why-us .item-block h3,
+.fh5co-services .item-block h3
 {
     margin: 25px 0;
 }

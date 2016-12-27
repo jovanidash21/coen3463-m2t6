@@ -9,19 +9,19 @@ router.get('/', function(req, res, next) {
       {
         "backgroundImageURL":"/images/index/slide_1.jpg",
         "headerTitle":"We provide fast repair service",
-        "headerSubtitle":"For your home or business.",
+        "headerSubtitle":"For your home or business",
         "buttonMessage":"Get Started"
       },
       {
         "backgroundImageURL":"/images/index/slide_2.jpg",
         "headerTitle":"Networks got you down?",
-        "headerSubtitle":"We fix it for you and be connected again.",
+        "headerSubtitle":"We fix it for you and be connected again",
         "buttonMessage":"Get Started"
       },
       {
         "backgroundImageURL":"/images/index/slide_3.jpg",
         "headerTitle":"Running out of ink?",
-        "headerSubtitle":"We've got you refilled.",
+        "headerSubtitle":"We've got you refilled",
         "buttonMessage":"Get Started"
       }
     ],
