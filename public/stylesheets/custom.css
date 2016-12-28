@@ -23,6 +23,7 @@
 }
 #fh5co-hero .flexslider .slider-text > .slider-text-inner h2
 {
+    margin: 0 0 5px 0;
     text-transform: uppercase;
 }
 #fh5co-hero .flexslider .slider-text > .slider-text-inner h3
@@ -30,7 +31,14 @@
     color: rgb(255, 255, 255);
     font-size: 45px;
     font-weight: 400;
+    margin: 0 0 10px 0;
     text-transform: lowercase;
+}
+.btn-primary
+{
+    background-color: rgb(0, 144, 14) !important;
+    border-color: rgb(0, 144, 14) !important;
+    color: rgb(255, 255, 255) !important;
 }
 #fh5co-why-us .item-block h3,
 .fh5co-services .item-block h3
