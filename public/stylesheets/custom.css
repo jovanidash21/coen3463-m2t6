@@ -16,6 +16,10 @@
     color: rgb(0, 211, 7);
     text-shadow: 0 0 0 rgba(0, 0, 0, 0.8);
 }
+#fh5co-hero .flexslider .slides li
+{
+    background-attachment: fixed;
+}
 #fh5co-hero .flexslider .slider-text > .slider-text-inner h2,
 #fh5co-hero .flexslider .slider-text > .slider-text-inner h3
 {
@@ -23,6 +27,7 @@
 }
 #fh5co-hero .flexslider .slider-text > .slider-text-inner h2
 {
+    font-weight: bold;
     margin: 0 0 5px 0;
     text-transform: uppercase;
 }
