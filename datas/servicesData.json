@@ -3,31 +3,35 @@
     "name":"PC Repair & Diagnostic",
     "id":"1",
     "sliderBackgroundImage":"/images/services/slide_1.jpg",
-    "featuredImage":"/images/image_1.jpg",
-    "description":"Donec luctus eros eu arcu molestie, non dignissim dui porta. Morbi tempus lorem a viverra aliquet. Etiam ultrices odio at lacus blandit, ac porta lorem sollicitudin.",
+    "featuredImage":"/images/services/featured_pc_repair_and_diagnostic.jpg",
+    "shortDescription":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae elit tristique, egestas augue et, auctor nisi.",
+    "description":"Don't waste your time fiddling with obscure technical settings or troubleshooting your malfunctioning computer, turn these tasks over to our computer repair service. We'll fix it.",
     "priceRange":"$1000 - $1500"
   },
   {
     "name":"Hard Disk Restoration",
     "id":"2",
     "sliderBackgroundImage":"/images/services/slide_1.jpg",
-    "featuredImage":"/images/image_1.jpg",
-    "description":"Donec luctus eros eu arcu molestie, non dignissim dui porta. Morbi tempus lorem a viverra aliquet. Etiam ultrices odio at lacus blandit, ac porta lorem sollicitudin.",
+    "featuredImage":"/images/services/featured_hard_disk_restoration.jpg",
+    "shortDescription":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae elit tristique, egestas augue et, auctor nisi.",
+    "description":"At SCREW-IT, we understand how important your data is. We offer an immediate data recovery technical analysis, a free no obligation fixed quote and an emergency service for critical recoveries. Our data recovery process is completely transparent. Contact us now.",
     "priceRange":"$100 - $150"
   },
   {
     "name":"Cartridge Replacement",
     "id":"3",
     "sliderBackgroundImage":"/images/services/slide_1.jpg",
-    "featuredImage":"/images/image_1.jpg",
-    "description":"Donec luctus eros eu arcu molestie, non dignissim dui porta. Morbi tempus lorem a viverra aliquet. Etiam ultrices odio at lacus blandit, ac porta lorem sollicitudin.",
+    "featuredImage":"/images/services/featured_cartridge_replacement.jpg",
+    "shortDescription":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae elit tristique, egestas augue et, auctor nisi.",
+    "description":"We pride ourselves on being a reliable source for ink cartridge refills. So when you’re running out , fortunately, the team at SCREW-IT can respond to your needs by providing prompt and efficient printer cartridge refill and cartridge replacement services.",
     "priceRange":"$50 - $100"
   },
   {
     "name":"Smartphone Setup & Repair",
     "id":"4",
     "sliderBackgroundImage":"/images/services/slide_1.jpg",
-    "featuredImage":"/images/image_1.jpg",
+    "featuredImage":"/images/services/featured_smartphone_setup_and_repair.jpg",
+    "shortDescription":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae elit tristique, egestas augue et, auctor nisi.",
     "description":"Donec luctus eros eu arcu molestie, non dignissim dui porta. Morbi tempus lorem a viverra aliquet. Etiam ultrices odio at lacus blandit, ac porta lorem sollicitudin.",
     "priceRange":"$500 - $1000"
   },
@@ -35,16 +39,18 @@
     "name":"PC Increase Speed",
     "id":"5",
     "sliderBackgroundImage":"/images/services/slide_1.jpg",
-    "featuredImage":"/images/image_1.jpg",
-    "description":"Donec luctus eros eu arcu molestie, non dignissim dui porta. Morbi tempus lorem a viverra aliquet. Etiam ultrices odio at lacus blandit, ac porta lorem sollicitudin.",
+    "featuredImage":"/images/services/featured_pc_increase_speed.jpg",
+    "shortDescription":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae elit tristique, egestas augue et, auctor nisi.",
+    "description":"Perhaps one of the most annoying things about computers is they always slow down over time. Your computer does not have to be slow. In most cases this is caused by your computer not running correctly. SCREW-IT can help you get the fastest speeds possible for your computer.",
     "priceRange":"$50 - $100"
   },
   {
     "name":"Network Service",
     "id":"6",
     "sliderBackgroundImage":"/images/services/slide_1.jpg",
-    "featuredImage":"/images/image_1.jpg",
-    "description":"Donec luctus eros eu arcu molestie, non dignissim dui porta. Morbi tempus lorem a viverra aliquet. Etiam ultrices odio at lacus blandit, ac porta lorem sollicitudin.",
+    "featuredImage":"/images/services/featured_network_services.jpg",
+    "shortDescription":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae elit tristique, egestas augue et, auctor nisi.",
+    "description":"Cable and Wireless networking allows you to use your computers just about anywhere in the house. SCREW-IT can setup your network for you, complete with enabled security for your safety. We work on any brand and every model. Message us now.",
     "priceRange":"$200 - $300"
   }
 ]
