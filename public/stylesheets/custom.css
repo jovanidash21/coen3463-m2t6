@@ -45,6 +45,13 @@
 {
     margin: 25px 0;
 }
+.fh5co-heading h2
+{
+    color: rgb(0, 144, 14);
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
 @media screen and (max-width: 768px)
 {
     #fh5co-hero .flexslider .slider-text > .slider-text-inner h3

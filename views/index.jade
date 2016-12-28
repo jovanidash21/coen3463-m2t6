@@ -5,21 +5,13 @@ block content
     #fh5co-why-us.animate-box
         .container
             .row
-                .col-md-6.col-md-offset-3.text-center.fh5co-heading
-                    h2 We offer professional repair services
+                .col-md-8.col-md-offset-2.text-center.fh5co-heading
+                    h2 Professional tech repair service you can trust
                     p
                         | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         | Mauris vitae elit tristique, egestas augue et, auctor nisi.
                         | Praesent eleifend interdum sem at sollicitudin.
-                each serviceData, i in servicesData
-                    .col-md-4.text-center.item-block.animate-box
-                        img.img-responsive(src="#{serviceData.featuredImage}", alt="Free HTML5 Templates")
-                        h3.service-name= serviceData.name
-                        p= serviceData.description
-                        p
-                            a.btn.btn-primary.btn-outline.with-arrow(href="/services/#{servicesData[i].id}")
-                                | Learn more
-                                i.icon-arrow-right
+                include templates/services-list
     #fh5co-testimonial.animate-box
         .container
             .row
