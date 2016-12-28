@@ -52,6 +52,24 @@
     font-weight: bold;
     text-transform: uppercase;
 }
+.fh5co-cta
+{
+    padding: 60px 0;
+}
+.fh5co-cta h2
+{
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    font-weight: bold;
+}
+.fh5co-cta h2 span
+{
+    color: rgb(184, 24, 12);
+}
+.fh5co-cta .btn
+{
+    font-size: 24px;
+}
 @media screen and (max-width: 768px)
 {
     #fh5co-hero .flexslider .slider-text > .slider-text-inner h3
