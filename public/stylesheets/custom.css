@@ -57,6 +57,10 @@
     font-weight: bold;
     text-transform: uppercase;
 }
+#fh5co-testimonial
+{
+    background-color: rgb(33, 104, 33);
+}
 #fh5co-testimonial .fh5co-heading h2,
 #fh5co-testimonial .fh5co-heading p
 {
@@ -66,10 +70,6 @@
 {
     font-size: 40px;
     font-weight: bold;
-}
-#fh5co-testimonial
-{
-    background-color: rgb(33, 104, 33);
 }
 .fh5co-cta
 {
