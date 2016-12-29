@@ -2,7 +2,6 @@ extends layout
 
 block content
     include templates/slider
-    #map.animate-box(data-animate-effect='fadeIn')
     .fh5co-contact.animate-box
         .container
             .row
@@ -50,6 +49,6 @@ block content
                             .alert.alert-success.alert-dismissable.fade.in
                                 | #{alertMessage}
                                 a.close(href="#", data-dismiss="alert", aria-label="close") &times;
+    #map.animate-box(data-animate-effect='fadeIn')
     script(src="#{googleMapsAPI}")
     script(src="/javascripts/google_map.js")
-    include templates/testimonial
