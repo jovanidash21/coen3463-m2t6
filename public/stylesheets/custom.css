@@ -108,6 +108,23 @@
 {
     font-size: 24px;
 }
+.fh5co-about,
+.fh5co-team
+{
+    padding: 100px 0 50px 0;
+}
+.fh5co-team .team-avatar
+{
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 10px solid rgb(0, 144, 14);
+    border-radius: 50%;
+    height: 300px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
 footer [class^="icon-"]
 {
     font-size: 40px;

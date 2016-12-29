@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var servicesData = require('../datas/servicesData.json');
 
 router.get('/', function(req, res, next) {
     res.render('about', {
@@ -11,7 +12,8 @@ router.get('/', function(req, res, next) {
                 "headerSubtitle":"Get to know us.",
                 "buttonMessage":"Get Started"
             }
-        ]
+        ],
+        servicesData: servicesData
     });
 });
 
