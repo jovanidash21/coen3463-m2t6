@@ -8,8 +8,7 @@ var slidersData = [
     {
         "backgroundImageURL":"/images/contact/slide_1.jpg",
         "headerTitle":"Get in touch",
-        "headerSubtitle":"Don't be shy.",
-        "buttonMessage":"Get Started"
+        "headerSubtitle":"Don't be shy."
     }
 ];
 

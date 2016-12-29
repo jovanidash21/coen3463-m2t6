@@ -9,8 +9,7 @@ router.get('/', function(req, res, next) {
             {
                 "backgroundImageURL":"/images/about/slider_1.png",
                 "headerTitle":"Let's have a look on who we are",
-                "headerSubtitle":"to get to know us",
-                "buttonMessage":"Get Started"
+                "headerSubtitle":"to get to know us"
             }
         ],
         servicesData: servicesData
