@@ -7,8 +7,8 @@ var xoauth2 = require('xoauth2');
 var slidersData = [
     {
         "backgroundImageURL":"/images/contact/slide_1.jpg",
-        "headerTitle":"Get in touch",
-        "headerSubtitle":"Don't be shy."
+        "headerTitle":"Don't be shy and get in touch",
+        "headerSubtitle":"contact us now"
     }
 ];
 
