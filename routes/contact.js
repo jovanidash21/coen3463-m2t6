@@ -15,7 +15,8 @@ var slidersData = [
 router.get('/', function(req, res, next) {
     res.render('contact', {
         title: 'Contact | Screw-IT',
-        slidersData: slidersData
+        slidersData: slidersData,
+        googleMapsAPI: process.env.GOOGLE_MAPS_API
     });
 });
 
@@ -51,7 +52,8 @@ router.post('/', function(req, res, next){
                 title: 'Contact | Screw-IT',
                 alertMessage: 'Error occured! Message not sent. Please try again!',
                 postError: true,
-                slidersData: slidersData
+                slidersData: slidersData,
+                googleMapsAPI: process.env.GOOGLE_MAPS_API
             });
         }
         else {
@@ -59,7 +61,8 @@ router.post('/', function(req, res, next){
                 title: 'Contact | Screw-IT',
                 alertMessage: 'Message sent! Thank you.',
                 postError: false,
-                slidersData: slidersData
+                slidersData: slidersData,
+                googleMapsAPI: process.env.GOOGLE_MAPS_API
             });
         }
         smtpTransport.close();
