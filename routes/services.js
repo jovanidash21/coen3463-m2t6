@@ -7,9 +7,9 @@ router.get('/', function(req, res, next) {
         title: 'Services | Screw-IT',
         slidersData: [
             {
-                "backgroundImageURL":"/images/image_1.jpg",
-                "headerTitle":"Our Expertise",
-                "headerSubtitle":"We offer professional services",
+                "backgroundImageURL":"/images/services/slider_1.png",
+                "headerTitle":"We've got the brain and work ethic",
+                "headerSubtitle":"to solve your tech issues",
                 "buttonMessage":"Get Started"
             }
         ],
