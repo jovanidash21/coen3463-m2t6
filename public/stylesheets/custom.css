@@ -164,6 +164,10 @@
     border-top: 1px solid rgb(33, 104, 33);;
     color: rgb(255, 255, 255);
 }
+.fh5co-services > .container img
+{
+    margin-bottom: 10px;
+}
 footer [class^="icon-"]
 {
     font-size: 40px;
