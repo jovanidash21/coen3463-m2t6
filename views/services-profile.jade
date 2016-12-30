@@ -9,15 +9,14 @@ block content
                     .container
                         .col-md-10.col-md-offset-1.text-center.js-fullheight.slider-text
                             .slider-text-inner
-                                h2=name
+                                h2= name
     .fh5co-services.animate-box
         .container
             .row
-                .col-md-6
-                    img.img-responsive(src="#{featuredImage}", alt="Free HTML5 Templates")
-                | &#x9;&#x9;&#x9;&#x9;
-                .col-md-6
+                .col-md-8.col-md-offset-2.text-center.fh5co-heading
                     h2= name
+                    img.img-responsive(src="#{featuredImage}", alt="Free HTML5 Templates")
+                .col-md-8.col-md-offset-2.fh5co-heading
                     p= description
                     h3
                         em= priceRange
