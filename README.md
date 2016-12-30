@@ -24,7 +24,7 @@ node ./bin/www
 
 ## Credits
 - [Bootstrap Theme](https://freehtml5.co/preview/?item=bold-free-website-template-using-bootstrap)
-- Images downloaded from the Google
+- Images downloaded from Google
 
 ## Connect
 - [Wordpress](https://jovaniwarguez.wordpress.com/)
