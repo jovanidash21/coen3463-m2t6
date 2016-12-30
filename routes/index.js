@@ -4,7 +4,7 @@ var servicesData = require('../datas/servicesData.json');
 
 router.get('/', function(req, res, next) {
   res.render('index', {
-    title: 'Screw-IT',
+    title: 'Screw-IT: Tech Repair',
     slidersData: [
       {
         "backgroundImageURL":"/images/index/slider_1.png",
