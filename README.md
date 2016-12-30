@@ -22,8 +22,9 @@ node ./bin/www
 ```
 * Open a browser and visit ```localhost:3000```
 
-## Credit
+## Credits
 - [Bootstrap Theme](https://freehtml5.co/preview/?item=bold-free-website-template-using-bootstrap)
+- Images downloaded from the Google
 
 ## Connect
 - [Wordpress](https://jovaniwarguez.wordpress.com/)
