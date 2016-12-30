@@ -9,15 +9,33 @@ block content
                     .container
                         .col-md-10.col-md-offset-1.text-center.js-fullheight.slider-text
                             .slider-text-inner
-                                h2= name
+                                h2 Welcome to one of our expertise
+                                h3= name
     .fh5co-services.animate-box
         .container
             .row
-                .col-md-8.col-md-offset-2.text-center.fh5co-heading
-                    h2= name
+                .col-md-4
+                    .nav-tabs-dropdown
+                        h3 Services Offered:
+                        ul#nav-tabs-wrapper.nav.nav-tabs.nav-pills.nav-stacked.wells
+                            li
+                                a(href="/services/1") PC Repair & Diagnostic
+                            li
+                                a(href="/services/2") Hard Disk Restoration
+                            li
+                                a(href="/services/3") Cartridge Replacement
+                            li
+                                a(href="/services/4") Smartphone Setup & Repair
+                            li
+                                a(href="/services/5") PC Increase Speed
+                            li
+                                a(href="/services/6") Network Service
+                .col-md-8.fh5co-heading
                     img.img-responsive(src="#{featuredImage}", alt="Free HTML5 Templates")
-                .col-md-8.col-md-offset-2.fh5co-heading
+                    h2= name
                     p= description
                     h3
+                        | Price: &nbsp;
                         em= priceRange
+
     include templates/call-to-action
