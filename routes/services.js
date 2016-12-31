@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var servicesData = require('../data/servicesData.json')
 
 router.get('/', function(req, res, next) {
     res.render('services', {
@@ -10,12 +11,12 @@ router.get('/', function(req, res, next) {
                 "headerTitle":"We've got the brain and work ethic",
                 "headerSubtitle":"to solve your tech issues"
             }
-        ]
+        ],
+        servicesData: servicesData
     });
 });
 router.get('/:serviceID', function(req, res){
     var serviceID = req.params.serviceID;
-    var servicesData = require('../data/servicesData.json')
 
     if (serviceID >= 1 && serviceID <= 6) {
 
