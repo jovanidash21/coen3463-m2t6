@@ -1,6 +1,5 @@
 var express = require('express');
 var router = express.Router();
-var servicesData = require('../data/servicesData.json');
 
 router.get('/', function(req, res, next) {
     res.render('about', {
@@ -11,8 +10,7 @@ router.get('/', function(req, res, next) {
                 "headerTitle":"Let's have a look on who we are",
                 "headerSubtitle":"to get to know us"
             }
-        ],
-        servicesData: servicesData
+        ]
     });
 });
 
