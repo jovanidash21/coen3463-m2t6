@@ -1,4 +1,13 @@
 extends layout
 
 block content
-    include templates/slider
+    aside#fh5co-hero.js-fullheight
+        .flexslider.js-fullheight
+            ul.slides
+                li(style="background-image: url(/images/404.png);")
+                    .overlay-gradient
+                    .container
+                        .col-md-10.col-md-offset-1.text-center.js-fullheight.slider-text
+                            .slider-text-inner
+                                h2 The page you are looking for can't be found
+                                h3 it doesn't exist

@@ -36,6 +36,11 @@ router.get('/:serviceID', function(req, res){
             priceRange: priceRange
         });
     }
+    else {
+        res.render('404',{
+            title: '404 | Page not found'
+        });
+    }
 });
 
 module.exports = router;
