@@ -22,62 +22,46 @@ block content
                     p
                         | Computer Engineers from Polytechnic University of the Philippines, Manila
                 .col-md-10.col-md-offset-1.text-center.fh5co-heading
-                    .col-md-6.fh5co-staff
-                        .team-avatar(style="background-image: url('/images/about/team_jovani_warguez.png');")
-                        h3 Jovani Warguez
-                        h4 Co-Founder, CEO
-                        ul.fh5co-social
-                            li
-                                a(href="http://jovaniwarguez.wordpress.com/", target="_blank")
-                                    i.icon-wordpress &nbsp;
-                            li
-                                a(href="https://facebook.com/jovani.cadornawarguez", target="_blank")
-                                    i.icon-facebook &nbsp;
-                            li
-                                a(href="http://www.twitter.com/jovanidash21", target="_blank")
-                                    i.icon-twitter &nbsp;
-                            li
-                                a(href="https://instagram.com/jovanidash21", target="_blank")
-                                    i.icon-instagram &nbsp;
-                            li
-                                a(href="https://plus.google.com/u/0/115410002894597690793", target="_blank")
-                                    i.icon-google-plus &nbsp;
-                            li
-                                a(href="https://www.linkedin.com/in/jovani-warguez-827a8a11b", target="_blank")
-                                    i.icon-linkedin &nbsp;
-                            li
-                                a(href="https://www.youtube.com/channel/UCNiVxhbJ6Ku9keIjkQX3RRQ", target="_blank")
-                                    i.icon-youtube-play &nbsp;
-                            li
-                                a(href="https://github.com/jovanidash21", target="_blank")
-                                    i.icon-github &nbsp;
-                            li
-                                a(href="http://codepen.io/jovanidash21/", target="_blank")
-                                    i.icon-codepen
-                    .col-md-6.fh5co-staff
-                        .team-avatar(style="background-image: url('/images/about/team_neryl_empenio.png');")
-                        h3 Neryl Empenio
-                        h4 Co-Founder, CTO
-                        ul.fh5co-social
-                            li
-                                a(href="https://facebook.com/profile.php?id=100001183719985", target="_blank")
-                                    i.icon-facebook &nbsp;
-                            li
-                                a(href="http://www.twitter.com/rrazamanaz", target="_blank")
-                                    i.icon-twitter &nbsp;
-                            li
-                                a(href="https://instagram.com/rrazamanaz", target="_blank")
-                                    i.icon-instagram &nbsp;
-                            li
-                                a(href="https://plus.google.com/u/0/115410002894597690793", target="_blank")
-                                    i.icon-google-plus &nbsp;
-                            li
-                                a(href="https://www.linkedin.com/in/neryl-anne-emperio-b26117118", target="_blank")
-                                    i.icon-linkedin &nbsp;
-                            li
-                                a(href="https://www.youtube.com/channel/UCXymaLlMuqpU4l2yLx6WtWQ", target="_blank")
-                                    i.icon-youtube-play &nbsp;
-                            li
-                                a(href="https://github.com/nerylempenio/", target="_blank")
-                                    i.icon-github &nbsp;
+                    each teamMemberData in teamMembersData
+                        .col-md-6.fh5co-staff
+                            .team-avatar(style="background-image: url('#{teamMemberData.avatar}');")
+                            h3= teamMemberData.name
+                            h4= teamMemberData.position
+                            ul.fh5co-social
+                                if teamMemberData.wordpress
+                                    li
+                                        a(href="#{teamMemberData.wordpress}", target="_blank")
+                                            i.icon-wordpress &nbsp;
+                                if teamMemberData.facebook
+                                    li
+                                        a(href="#{teamMemberData.facebook}", target="_blank")
+                                            i.icon-facebook &nbsp;
+                                if teamMemberData.twitter
+                                    li
+                                        a(href="#{teamMemberData.twitter}", target="_blank")
+                                            i.icon-twitter &nbsp;
+                                if teamMemberData.instagram
+                                    li
+                                        a(href="#{teamMemberData.instagram}", target="_blank")
+                                            i.icon-instagram &nbsp;
+                                if teamMemberData.googleplus
+                                    li
+                                        a(href="#{teamMemberData.googleplus}", target="_blank")
+                                            i.icon-google-plus &nbsp;
+                                if teamMemberData.linkedin
+                                    li
+                                        a(href="#{teamMemberData.linkedin}", target="_blank")
+                                            i.icon-linkedin &nbsp;
+                                if teamMemberData.youtube
+                                    li
+                                        a(href="#{teamMemberData.youtube}", target="_blank")
+                                            i.icon-youtube-play &nbsp;
+                                if teamMemberData.github
+                                    li
+                                        a(href="#{teamMemberData.github}", target="_blank")
+                                            i.icon-github &nbsp;
+                                if teamMemberData.codepen
+                                    li
+                                        a(href="#{teamMemberData.codepen}", target="_blank")
+                                            i.icon-codepen
     include templates/call-to-action
