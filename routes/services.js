@@ -15,6 +15,7 @@ router.get('/', function(req, res, next) {
 });
 router.get('/:serviceID', function(req, res){
     var serviceID = req.params.serviceID;
+    var servicesData = require('../data/servicesData.json')
 
     if (serviceID >= 1 && serviceID <= 6) {
 

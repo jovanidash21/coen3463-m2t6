@@ -13,6 +13,7 @@ var contact = require('./routes/contact');
 var app = express();
 
 app.locals.servicesData = require('./data/servicesData.json');
+app.locals.teamMembersData = require('./data/teamMembersData.json');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
