@@ -4,6 +4,11 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var mongoose = require('mongoose');
+var Schema = mongoose.Schema;
+
+mongoose.Promise = global.Promise;
+mongoose.connect('process.env.MONGODB_URI');
 
 var index = require('./routes/index');
 var services = require('./routes/services');
@@ -11,6 +16,34 @@ var about = require('./routes/about');
 var contact = require('./routes/contact');
 
 var app = express();
+
+var servicesDataSchema = new Schema({
+  name: {type: String, required: true},
+  id: {type: Number, required: true, unique: true},
+  sliderBackgroundImage: {type: String, required: true},
+  featuredImage: {type: String, required: true},
+  shortDescription: {type: String, required: true},
+  description: {type: String, required: true},
+  priceRange: {type: String, required: true}
+}, {collection: 'servicesData'});
+
+var teamMembersDataSchema = new Schema({
+  name: {type: String, required: true},
+  avatar: {type: String, required: true},
+  position: {type: String, required: true},
+  wordpress: String,
+  facebook: String,
+  twitter: String,
+  instagram: String,
+  googleplus: String,
+  linkedin: String,
+  youtube: String,
+  github: String,
+  codepen: String
+}, {collection: 'teamMembersData'});
+
+servicesData = mongoose.model('servicesData', servicesDataSchema);
+teamMembersData = mongoose.model('teamMembersData', teamMembersDataSchema);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
