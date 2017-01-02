@@ -17,30 +17,42 @@ var contact = require('./routes/contact');
 
 var app = express();
 
-var servicesDataSchema = new Schema({
-  name: {type: String, required: true},
-  id: {type: Number, required: true, unique: true},
-  sliderBackgroundImage: {type: String, required: true},
-  featuredImage: {type: String, required: true},
-  shortDescription: {type: String, required: true},
-  description: {type: String, required: true},
-  priceRange: {type: String, required: true}
-}, {collection: 'servicesData'});
+var servicesDataSchema = new Schema
+(
+  {
+    name: {type: String, required: true},
+    id: {type: Number, required: true, unique: true},
+    sliderBackgroundImage: {type: String, required: true},
+    featuredImage: {type: String, required: true},
+    shortDescription: {type: String, required: true},
+    description: {type: String, required: true},
+    priceRange: {type: String, required: true}
+  },
+  {
+    collection: 'servicesData'
+  }
+);
 
-var teamMembersDataSchema = new Schema({
-  name: {type: String, required: true},
-  avatar: {type: String, required: true},
-  position: {type: String, required: true},
-  wordpress: String,
-  facebook: String,
-  twitter: String,
-  instagram: String,
-  googleplus: String,
-  linkedin: String,
-  youtube: String,
-  github: String,
-  codepen: String
-}, {collection: 'teamMembersData'});
+var teamMembersDataSchema = new Schema
+(
+  {
+    name: {type: String, required: true},
+    avatar: {type: String, required: true},
+    position: {type: String, required: true},
+    wordpress: String,
+    facebook: String,
+    twitter: String,
+    instagram: String,
+    googleplus: String,
+    linkedin: String,
+    youtube: String,
+    github: String,
+    codepen: String
+  },
+  {
+    collection: 'teamMembersData'
+  }
+);
 
 servicesData = mongoose.model('servicesData', servicesDataSchema);
 teamMembersData = mongoose.model('teamMembersData', teamMembersDataSchema);
