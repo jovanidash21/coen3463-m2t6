@@ -7,7 +7,8 @@
 </p>
 
 ## Prerequisite
-* Node.js installed
+* [Node.js](https://nodejs.org/en/) installed.
+* [MongoDB](https://www.mongodb.com/) Installed.
 
 ## Installation
 * Clone or download this repository.
