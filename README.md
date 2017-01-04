@@ -17,21 +17,21 @@
 ```
 npm install
 ```
-* Create a database locally using MongoDB on your computer
+* Create a database locally using MongoDB on your computer.
 ```
 use screw-it
 ``` 
 * Insert to the database the JSON files inside the data folder of this project.
-* Open app.js and replace ```process.env.MONGODB_URI``` with ```'localhost:27017/screw-it'```
-* Start the MongoDB Server
+* Open app.js and replace ```process.env.MONGODB_URI``` with ```'localhost:27017/screw-it'```.
+* Start the MongoDB Server.
 ```
 mongod
 ``` 
-* Open another shell and run 'www' file inside the bin directory
+* Open another shell and run 'www' file inside the bin directory.
 ```
 node ./bin/www
 ```
-* Open a browser and visit ```localhost:3000```
+* Open a browser and visit ```localhost:3000```.
 
 ## Credits
 - [Bootstrap Theme](https://freehtml5.co/preview/?item=bold-free-website-template-using-bootstrap)
