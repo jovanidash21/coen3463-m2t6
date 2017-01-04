@@ -1,0 +1,56 @@
+[
+  {
+    "name":"PC Repair & Diagnostic",
+    "id":"1",
+    "sliderBackgroundImage":"/images/services/slider_pc_repair_and_diagnostic.png",
+    "featuredImage":"/images/services/featured_pc_repair_and_diagnostic.png",
+    "shortDescription":"When you encounter minor issues on your pc like hardware and software conflicts, turn it over to us before they cause you any harm.",
+    "description":"Don't waste your time fiddling with obscure technical settings or troubleshooting your malfunctioning computer, turn these tasks over to our computer repair service. We'll fix it.",
+    "priceRange":"₱5000 - ₱8000"
+  },
+  {
+    "name":"Hard Disk Restoration",
+    "id":"2",
+    "sliderBackgroundImage":"/images/services/slider_hard_disk_restoration.png",
+    "featuredImage":"/images/services/featured_hard_disk_restoration.png",
+    "shortDescription":"We know how valuable your data is. Hard drive data corruption comes from virus attacks and the solution is hard disk recovery.",
+    "description":"At Screw-IT, we understand how important your data is. We offer an immediate data recovery technical analysis, a free no obligation fixed quote and an emergency service for critical recoveries. Our data recovery process is completely transparent. Contact us now.",
+    "priceRange":"₱2000 - ₱5000"
+  },
+  {
+    "name":"Cartridge Replacement",
+    "id":"3",
+    "sliderBackgroundImage":"/images/services/slider_cartridge_replacement.png",
+    "featuredImage":"/images/services/featured_cartridge_replacement.png",
+    "shortDescription":"Ink is an important part of your printer. The type of printer cartridges that you will buy depends on the model or brand of your printer.",
+    "description":"We pride ourselves on being a reliable source for ink cartridge refills. So when you’re running out , fortunately, the team at Screw-IT can respond to your needs by providing prompt and efficient printer cartridge refill and cartridge replacement services.",
+    "priceRange":"₱500 - ₱1000"
+  },
+  {
+    "name":"Smartphone Setup & Repair",
+    "id":"4",
+    "sliderBackgroundImage":"/images/services/slider_smartphone_setup_and_repair.png",
+    "featuredImage":"/images/services/featured_smartphone_setup_and_repair.png",
+    "shortDescription":"Common issues with a smartphone are the touchscreen is cracked, water damaged, battery swollen, overheating and app crashes.",
+    "description":"Here at Screw-IT, we can repair your smarthphone with any brand. We can help to bring your phone back to life. No matter what smartphone you carry even if it is iPhone, Samsung, Sony, HTC or any brand, We can diagnose and repair it. We’ll provide you with a detailed quote and make the repairs quick and affordable.",
+    "priceRange":"₱1000 - ₱3000"
+  },
+  {
+    "name":"PC Increase Speed",
+    "id":"5",
+    "sliderBackgroundImage":"/images/services/slider_pc_increase_speed.png",
+    "featuredImage":"/images/services/featured_pc_increase_speed.png",
+    "shortDescription":"Over time, the speed of your PC can decrease. This seems as your PC is taking more time to respond to your actions like opening directories.",
+    "description":"Perhaps one of the most annoying things about computers is they always slow down over time. Your computer does not have to be slow. In most cases this is caused by your computer not running correctly. Screw-IT can help you get the fastest speeds possible for your computer.",
+    "priceRange":"₱500 - ₱1000"
+  },
+  {
+    "name":"Network Service",
+    "id":"6",
+    "sliderBackgroundImage":"/images/services/slider_network_services.png",
+    "featuredImage":"/images/services/featured_network_services.png",
+    "shortDescription":"Computer networking allows you to use your computers just about anywhere in your home or business and it must be highly secured. ",
+    "description":"Cable and Wireless networking allows you to use your computers just about anywhere in the house. Screw-IT can setup your network for you, complete with enabled security for your safety. We work on any brand and every model. Message us now.",
+    "priceRange":"₱3000 - ₱8000"
+  }
+]
