@@ -17,17 +17,21 @@
 ```
 npm install
 ```
+* Start the MongoDB Server.
+```
+mongod
+``` 
+* Open another terminal or cmd and run mongo.
+```
+mongo
+``` 
 * Create a database locally using MongoDB on your computer.
 ```
 use screw-it
 ``` 
 * Insert to the database the JSON files inside the data folder of this project.
 * Open app.js and replace ```process.env.MONGODB_URI``` with ```'localhost:27017/screw-it'```.
-* Start the MongoDB Server.
-```
-mongod
-``` 
-* Open another shell and run 'www' file inside the bin directory.
+* Open another terminal or cmd and run 'www' file inside the bin directory.
 ```
 node ./bin/www
 ```
