@@ -7,11 +7,15 @@
 </p>
 
 ## Prerequisite
-* [Node.js](https://nodejs.org/en/) installed.
+* [Node.js](https://nodejs.org/en/) installed.9(
+* [Gmail API and OAuth 2.0 Credentials](http://masashi-k.blogspot.com/2013/06/sending-mail-with-gmail-using-xoauth2.html) registered. *Note: Follow Steps 2-4. 
+* [Google Maps API]() registered.
 * [MongoDB](https://www.mongodb.com/) installed.
 
 ## Installation
 * Clone or download this repository.
+* Open routes/contact.js and replace ```process.env.CLIENT_ID```, ```process.env.CLIENT_SECRET```, and ```process.env.REFRESH_TOKEN``` with ```'{YOUR_CLIENT_ID}'```, ```'{YOUR_CLIENT_SECRET}'```, and ```'{YOUR_REFRESH_TOKEN}'``` respectively.
+* On the same file, replace ```process.env.GOOGLE_MAPS_API``` with ```'https://maps.googleapis.com/maps/api/js?key={YOUR_GOOGLE_MAPS_API_KEY}&sensor=false"'```
 * Using a terminal or cmd, navigate to the project directory.
 * Install node modules.
 ```
