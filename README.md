@@ -7,7 +7,7 @@
 </p>
 
 ## Prerequisite
-* [Node.js](https://nodejs.org/en/) installed.9(
+* [Node.js](https://nodejs.org/en/) installed.
 * [Gmail API and OAuth 2.0 Credentials](http://masashi-k.blogspot.com/2013/06/sending-mail-with-gmail-using-xoauth2.html) registered. *Note: Follow Steps 2-4. 
 * [Google Maps API](https://console.developers.google.com/flows/enableapi?apiid=maps_backend,geocoding_backend,directions_backend,distance_matrix_backend,elevation_backend,places_backend&reusekey=true) registered.
 * [MongoDB](https://www.mongodb.com/) installed.
