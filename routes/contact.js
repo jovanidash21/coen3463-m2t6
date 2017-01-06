@@ -4,6 +4,7 @@ var nodemailer = require('nodemailer');
 var smtpTransport = require('nodemailer-smtp-transport');
 var xoauth2 = require('xoauth2');
 
+var googleMapsAPI = process.env.GOOGLE_MAPS_API
 var slidersData = [
     {
         "backgroundImageURL":"/images/contact/slider_1.png",
@@ -12,11 +13,12 @@ var slidersData = [
     }
 ];
 
+
 router.get('/', function(req, res, next) {
     res.render('contact', {
         title: 'Contact | Screw-IT',
         slidersData: slidersData,
-        googleMapsAPI: process.env.GOOGLE_MAPS_API
+        googleMapsAPI: googleMapsAPI
     });
 });
 
@@ -53,7 +55,7 @@ router.post('/', function(req, res, next){
                 alertMessage: 'Error occured! Message not sent. Please try again!',
                 postError: true,
                 slidersData: slidersData,
-                googleMapsAPI: process.env.GOOGLE_MAPS_API
+                googleMapsAPI: googleMapsAPI
             });
         }
         else {
@@ -62,7 +64,7 @@ router.post('/', function(req, res, next){
                 alertMessage: 'Message sent! Thank you.',
                 postError: false,
                 slidersData: slidersData,
-                googleMapsAPI: process.env.GOOGLE_MAPS_API
+                googleMapsAPI: googleMapsAPI
             });
         }
         smtpTransport.close();
