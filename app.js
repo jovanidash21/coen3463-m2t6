@@ -7,9 +7,6 @@ var bodyParser = require('body-parser');
 var fs = require('fs');
 var mongoose = require('mongoose');
 
-mongoose.Promise = global.Promise;
-mongoose.connect(process.env.MONGODB_URI);
-
 var index = require('./routes/index');
 var services = require('./routes/services');
 var about = require('./routes/about');
@@ -21,6 +18,10 @@ var app = express();
 fs.readdirSync(__dirname + '/models').forEach(function(filename) {
     if (~filename.indexOf('.js')) require(__dirname + '/models/' + filename)
 });
+
+// mongoose configuration
+mongoose.Promise = global.Promise;
+mongoose.connect(process.env.MONGODB_URI);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
