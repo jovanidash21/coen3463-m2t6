@@ -40,7 +40,7 @@ mongo
 use screw-it
 ``` 
 * Insert to the database the JSON files inside the data folder of this project.
-* Open app.js and replace ```process.env.MONGODB_URI``` with ```'localhost:27017/screw-it'```.
+* Open app.js and replace ```process.env.MONGODB_URI``` with ```'mongodb://localhost:27017/screw-it'```.
 * Open another terminal or cmd and run 'www' file inside the bin directory.
 ```
 node ./bin/www
