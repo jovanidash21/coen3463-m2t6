@@ -35,7 +35,7 @@ fs.readdirSync(__dirname + '/models').forEach(function(filename) {
 
 // mongoose configuration
 mongoose.Promise = global.Promise;
-mongoose.connect(process.env.MONGODB_URI);
+mongoose.connect(process.env.MONGODB_URI, { useMongoClient: true });
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
