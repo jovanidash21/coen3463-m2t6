@@ -4,7 +4,7 @@ var nodemailer = require('nodemailer');
 var smtpTransport = require('nodemailer-smtp-transport');
 var xoauth2 = require('xoauth2');
 
-var googleMapsAPI = 'https://maps.googleapis.com/maps/api/js?key=' + process.env.GOOGLE_MAPS_API_KEY + '&sensor=false'
+var googleMapsAPI = 'https://maps.googleapis.com/maps/api/js?key=' + process.env.GOOGLE_MAPS_API_KEY;
 var slidersData = [
     {
         "backgroundImageURL":"/images/contact/slider_1.png",
