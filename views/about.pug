@@ -24,44 +24,44 @@ block content
                 .col-md-10.col-md-offset-1.text-center.fh5co-heading
                     each teamMemberData in teamMembersData
                         .col-md-6.fh5co-staff
-                            .team-avatar(style="background-image: url('#{teamMemberData.avatar}');")
+                            .team-avatar(style=`background-image: url(${teamMemberData.avatar})`)
                             h3= teamMemberData.name
                             h4= teamMemberData.position
                             ul.fh5co-social
                                 if teamMemberData.wordpress
                                     li
-                                        a(href="#{teamMemberData.wordpress}", target="_blank")
+                                        a(href=`${teamMemberData.wordpress}`, target="_blank")
                                             i.icon-wordpress &nbsp;
                                 if teamMemberData.facebook
                                     li
-                                        a(href="#{teamMemberData.facebook}", target="_blank")
+                                        a(href=`${teamMemberData.facebook}`, target="_blank")
                                             i.icon-facebook &nbsp;
                                 if teamMemberData.twitter
                                     li
-                                        a(href="#{teamMemberData.twitter}", target="_blank")
+                                        a(href=`${teamMemberData.twitter}`, target="_blank")
                                             i.icon-twitter &nbsp;
                                 if teamMemberData.instagram
                                     li
-                                        a(href="#{teamMemberData.instagram}", target="_blank")
+                                        a(href=`${teamMemberData.instagram}`, target="_blank")
                                             i.icon-instagram &nbsp;
                                 if teamMemberData.googleplus
                                     li
-                                        a(href="#{teamMemberData.googleplus}", target="_blank")
+                                        a(href=`${teamMemberData.googleplus}`, target="_blank")
                                             i.icon-google-plus &nbsp;
                                 if teamMemberData.linkedin
                                     li
-                                        a(href="#{teamMemberData.linkedin}", target="_blank")
+                                        a(href=`${teamMemberData.linkedin}`, target="_blank")
                                             i.icon-linkedin &nbsp;
                                 if teamMemberData.youtube
                                     li
-                                        a(href="#{teamMemberData.youtube}", target="_blank")
+                                        a(href=`${teamMemberData.youtube}`, target="_blank")
                                             i.icon-youtube-play &nbsp;
                                 if teamMemberData.github
                                     li
-                                        a(href="#{teamMemberData.github}", target="_blank")
+                                        a(href=`${teamMemberData.github}`, target="_blank")
                                             i.icon-github &nbsp;
                                 if teamMemberData.codepen
                                     li
-                                        a(href="#{teamMemberData.codepen}", target="_blank")
+                                        a(href=`${teamMemberData.codepen}`, target="_blank")
                                             i.icon-codepen
     include templates/call-to-action

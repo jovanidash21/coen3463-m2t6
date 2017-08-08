@@ -43,13 +43,13 @@ block content
                     if(typeof alertMessage !== "undefined")
                         if(!!postError)
                             .alert.alert-danger.alert-dismissable.fade.in
-                                | #{alertMessage}
+                                span= alertMessage
                                 a.close(href="#", data-dismiss="alert", aria-label="close") &times;
                         else
                             .alert.alert-success.alert-dismissable.fade.in
-                                | #{alertMessage}
+                                span= alertMessage
                                 a.close(href="#", data-dismiss="alert", aria-label="close") &times;
     #map.animate-box(data-animate-effect='fadeIn')
 block script
-    script(type="text/javascript", src="#{googleMapsAPI}")
+    script(type="text/javascript", src=`${googleMapsAPI}`)
     script(type="text/javascript", src="/javascripts/google_map.js")

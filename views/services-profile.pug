@@ -4,7 +4,7 @@ block content
     aside#fh5co-hero.js-fullheight
         .flexslider.js-fullheight
             ul.slides
-                li(style="background-image: url(#{sliderBackgroundImage});")
+                li(style=`background-image: url(${sliderBackgroundImage})`)
                     .overlay-gradient
                     .container
                         .col-md-10.col-md-offset-1.text-center.js-fullheight.slider-text
@@ -31,7 +31,7 @@ block content
                             li
                                 a(href="/services/6") Network Service
                 .col-md-8.fh5co-heading
-                    img.img-responsive(src="#{featuredImage}", alt="sservices")
+                    img.img-responsive(src=`${featuredImage}`, alt="services")
                     h2= name
                     p= description
                     h3

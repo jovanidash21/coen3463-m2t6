@@ -1,9 +1,9 @@
 each serviceData, i in servicesData
     .col-md-4.text-center.item-block.animate-box
-        img.img-responsive(src="#{serviceData.featuredImage}", alt="Free HTML5 Templates")
+        img.img-responsive(src=`${serviceData.featuredImage}`, alt="Free HTML5 Templates")
         h3.service-name= serviceData.name
         p= serviceData.shortDescription
         p
-            a.btn.btn-primary.btn-outline.with-arrow(href="/services/#{servicesData[i].id}")
+            a.btn.btn-primary.btn-outline.with-arrow(href=`/services/${servicesData[i].id}`)
                 | Read More
                 i.icon-arrow-right
