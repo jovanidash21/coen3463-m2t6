@@ -4,7 +4,7 @@ var nodemailer = require('nodemailer');
 var smtpTransport = require('nodemailer-smtp-transport');
 var xoauth2 = require('xoauth2');
 
-var googleMapsAPI = process.env.GOOGLE_MAPS_API
+var googleMapsAPI = 'https://maps.googleapis.com/maps/api/js?key=' + process.env.GOOGLE_MAPS_API_KEY + '&sensor=false'
 var slidersData = [
     {
         "backgroundImageURL":"/images/contact/slider_1.png",
@@ -25,9 +25,9 @@ router.get('/', function(req, res, next) {
 router.post('/', function(req, res, next){
     var generator = xoauth2.createXOAuth2Generator({
         user: 'screwittechrepair@gmail.com',
-        clientId: process.env.CLIENT_ID,
-        clientSecret: process.env.CLIENT_SECRET,
-        refreshToken: process.env.REFRESH_TOKEN
+        clientId: process.env.GOOGLE_CLIENT_ID,
+        clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+        refreshToken: process.env.GOOGLE_REFRESH_TOKEN
     });
     generator.on('token', function(token){
         console.log('New token for %s: %s', token.user, token.accessToken);
