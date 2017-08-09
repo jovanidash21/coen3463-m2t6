@@ -25,9 +25,9 @@ router.get('/', function(req, res, next) {
 router.post('/', function(req, res, next){
     var generator = xoauth2.createXOAuth2Generator({
         user: 'screwittechrepair@gmail.com',
-        clientId: process.env.GOOGLE_CLIENT_ID,
-        clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-        refreshToken: process.env.GOOGLE_REFRESH_TOKEN
+        clientId: process.env.GMAIL_CLIENT_ID,
+        clientSecret: process.env.GMAIL_CLIENT_SECRET,
+        refreshToken: process.env.GMAIL_REFRESH_TOKEN
     });
     generator.on('token', function(token){
         console.log('New token for %s: %s', token.user, token.accessToken);
