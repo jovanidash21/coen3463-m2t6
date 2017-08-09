@@ -1,7 +1,7 @@
 var google;
 
 function init() {
-    var myLatlng = new google.maps.LatLng(14.599018, 121.0040826);
+    var myLatlng = new google.maps.LatLng(14.598948708907226, 121.00528612732887);
     var mapOptions = {
         zoom: 10,
         center: myLatlng,
@@ -175,19 +175,12 @@ function init() {
         ]
     };
     var mapElement = document.getElementById('map');
-    var map = new google.maps.Map(mapElement, mapOptions);
-    var addresses = ['PUP College of Engineering CEA Building'];
-    for (var x = 0; x < addresses.length; x++) {
-        $.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address='+addresses[x]+'&sensor=false', null, function (data) {
-            var p = data.results[0].geometry.location
-            var latlng = new google.maps.LatLng(p.lat, p.lng);
-            new google.maps.Marker({
-                position: latlng,
-                map: map,
-                icon: "images/google_maps_marker.png"
-            });
-        });
-    }
+    var map = new google.maps.Map(mapElement, mapOptions); 
+    new google.maps.Marker({
+        position: myLatlng,
+        map: map,
+        icon: "images/google_maps_marker.png"
+    });
     google.maps.event.addDomListener(window, 'resize', function() {
         var center = map.getCenter();
         google.maps.event.trigger(map, 'resize');
