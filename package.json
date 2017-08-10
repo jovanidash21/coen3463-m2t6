@@ -17,10 +17,8 @@
     "mongoose": "^4.11.5",
     "morgan": "^1.8.2",
     "nodemailer": "^4.0.1",
-    "nodemailer-smtp-transport": "^2.7.4",
     "pug": "^2.0.0-rc.3",
-    "serve-favicon": "^2.4.3",
-    "xoauth2": "^1.2.0"
+    "serve-favicon": "^2.4.3"
   },
   "devDependencies": {
     "browser-sync": "^2.18.13",
