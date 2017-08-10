@@ -23,22 +23,15 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/', function(req, res, next){
-    var generator = xoauth2.createXOAuth2Generator({
-        user: 'screwittechrepair@gmail.com',
-        clientId: process.env.GMAIL_CLIENT_ID,
-        clientSecret: process.env.GMAIL_CLIENT_SECRET,
-        refreshToken: process.env.GMAIL_REFRESH_TOKEN
-    });
-    generator.on('token', function(token){
-        console.log('New token for %s: %s', token.user, token.accessToken);
-    });
-    smtpTransport = nodemailer.createTransport({
+    var transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            xoauth2: generator
-        },
-        tls: {
-            rejectUnauthorized: false
+            type: 'OAuth2',
+            user: 'screwittechrepair@gmail.com',
+            clientId: process.env.GMAIL_CLIENT_ID,
+            clientSecret: process.env.GMAIL_CLIENT_SECRET,
+            refreshToken: process.env.GMAIL_REFRESH_TOKEN,
+            accessToken: process.env.GMAIL_ACCESS_TOKEN,
         }
     });
     var mailOptions = {
@@ -48,7 +41,7 @@ router.post('/', function(req, res, next){
         text: "Visitor's Contact Form Details... Name: "+req.body.name+" Email: "+req.body.email+" Message: "+req.body.message,
         html: "<p>Visitor's Contact Form Details:</p><ul><li>Name: "+req.body.name+"</li><li>Email: "+req.body.email+"</li><li>Message: "+req.body.message+"</li></ul>"
     };
-    smtpTransport.sendMail(mailOptions, function(error, response) {
+    transporter.sendMail(mailOptions, function(error, response) {
         if (error) {
             res.render('contact', {
                 title: 'Contact | Screw-IT',
@@ -67,7 +60,7 @@ router.post('/', function(req, res, next){
                 googleMapsAPI: googleMapsAPI
             });
         }
-        smtpTransport.close();
+        transporter.close();
     });
 });
 module.exports = router;
