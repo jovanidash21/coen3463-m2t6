@@ -1,59 +1,59 @@
 extends layout
 
 block content
-    include templates/slider
-    #fh5co-why-us.animate-box
-        .container
-            .row
-                .col-md-8.col-md-offset-2.text-center.fh5co-heading
-                    h1 Professional tech repair service you can trust
-                    p
-                        | Screw-IT is an Information Technology solution and service
-                        | provider company of any computer and related peripheral.
-                include templates/services-list
-    .fh5co-section-with-image
-        img.img-responsive(src="/images/about_section.png", alt="about")
-        .fh5co-box.animate-box
-            h2 Screw-IT
+  include templates/slider
+  #fh5co-why-us.animate-box
+    .container
+      .row
+        .col-md-8.col-md-offset-2.text-center.fh5co-heading
+          h1 Professional tech repair service you can trust
+          p
+            | Screw-IT is an Information Technology solution and service
+            | provider company of any computer and related peripheral.
+        include templates/services-list
+  .fh5co-section-with-image
+    img.img-responsive(src="/images/about_section.png", alt="about")
+    .fh5co-box.animate-box
+      h2 Screw-IT
+      p
+        | Screw-IT was established in 2016. We offer IT Services for your home or
+        | business including Hardware Repair and Software Troubleshooting.
+      p
+        a.btn.btn-primary.btn-outline.with-arrow(href="/about")
+          | Read More
+          i.icon-arrow-right
+  #fh5co-testimonial
+    .container.animate-box
+      .row
+        .col-md-6.col-md-offset-3.text-center.fh5co-heading
+          h2 Happy Clients
+          p
+            | What Our Customers Have To Say About Our Service
+        .col-md-4.text-center.item-block
+          blockquote
             p
-                | Screw-IT was established in 2016. We offer IT Services for your home or
-                | business including Hardware Repair and Software Troubleshooting.
+              | "Screw-IT offers expert knowledge in defining
+              | problems and finding the right solutions."
             p
-                a.btn.btn-primary.btn-outline.with-arrow(href="/about")
-                    | Read More
-                    i.icon-arrow-right
-    #fh5co-testimonial
-        .container.animate-box
-            .row
-                .col-md-6.col-md-offset-3.text-center.fh5co-heading
-                    h2 Happy Clients
-                    p
-                        | What Our Customers Have To Say About Our Service
-                .col-md-4.text-center.item-block
-                    blockquote
-                        p
-                            | "Screw-IT offers expert knowledge in defining
-                            | problems and finding the right solutions."
-                        p
-                            span.fh5co-author
-                                cite Archimedes Agatha
-                            i.icon.facebook-color.icon-facebook.pull-right
-                .col-md-4.text-center.item-block
-                    blockquote
-                        p
-                            | "Screw-IT is at it's finest in giving professional
-                            | computer service repair. Their excellent."
-                        p
-                            span.fh5co-author
-                                cite Kleopatra Kleopatros
-                            i.icon.googleplus-color.icon-google-plus.pull-right
-                .col-md-4.text-center.item-block
-                    blockquote
-                        p
-                            | "Screw-IT is knowledgeable in troubleshooting and
-                            | I would highly recommend them."
-                        p
-                            span.fh5co-author
-                                cite Zeno Zephyros
-                            i.icon.twitter-color.icon-twitter.pull-right
-    include templates/call-to-action
+              span.fh5co-author
+                cite Archimedes Agatha
+              i.icon.facebook-color.icon-facebook.pull-right
+        .col-md-4.text-center.item-block
+          blockquote
+            p
+              | "Screw-IT is at it's finest in giving professional
+              | computer service repair. Their excellent."
+            p
+              span.fh5co-author
+                cite Kleopatra Kleopatros
+              i.icon.googleplus-color.icon-google-plus.pull-right
+        .col-md-4.text-center.item-block
+          blockquote
+            p
+              | "Screw-IT is knowledgeable in troubleshooting and
+              | I would highly recommend them."
+            p
+              span.fh5co-author
+                cite Zeno Zephyros
+              i.icon.twitter-color.icon-twitter.pull-right
+  include templates/call-to-action

@@ -1,55 +1,55 @@
 extends layout
 
 block content
-    include templates/slider
-    .fh5co-contact.animate-box
-        .container
-            .row
-                .col-md-3
-                    h3 Contact Info.
-                    ul.contact-info
-                        li
-                            i.icon-map
-                            | PUP College of Engineering
-                            br
-                            | CEA Building, NDC Campus
-                            br
-                            | Anonas cor. Pureza St.
-                            br
-                            | Sta. Mesa, Manila,
-                            br
-                            | Philippines 01008
-                        li
-                            i.icon-phone
-                            | 123-4567
-                        li
-                            i.icon-envelope
-                            | screwittechrepair@gmail.com
-                .col-md-8.col-md-push-1.col-sm-12.col-sm-push-0.col-xs-12.col-xs-push-0
-                    .row
-                        form(action="/contact", method="post")
-                            .col-md-6
-                                .form-group
-                                    input.form-control(name="name", value="", placeholder="Name", type="text", required="")
-                            .col-md-6
-                                .form-group
-                                    input.form-control(name="email", value="", placeholder="Email", type="text", required="")
-                            .col-md-12
-                                .form-group
-                                    textarea.form-control(name="message", cols="30", rows="7", placeholder="Message", required="")
-                            .col-md-12
-                                .form-group
-                                    input.btn.btn-primary(name="submit", value="Send Message", type="submit")
-                    if(typeof alertMessage !== "undefined")
-                        if(!!postError)
-                            .alert.alert-danger.alert-dismissable.fade.in
-                                span= alertMessage
-                                a.close(href="#", data-dismiss="alert", aria-label="close") &times;
-                        else
-                            .alert.alert-success.alert-dismissable.fade.in
-                                span= alertMessage
-                                a.close(href="#", data-dismiss="alert", aria-label="close") &times;
-    #map.animate-box(data-animate-effect='fadeIn')
+  include templates/slider
+  .fh5co-contact.animate-box
+    .container
+      .row
+        .col-md-3
+          h3 Contact Info.
+          ul.contact-info
+            li
+              i.icon-map
+              | PUP College of Engineering
+              br
+              | CEA Building, NDC Campus
+              br
+              | Anonas cor. Pureza St.
+              br
+              | Sta. Mesa, Manila,
+              br
+              | Philippines 01008
+            li
+              i.icon-phone
+              | 123-4567
+            li
+              i.icon-envelope
+              | screwittechrepair@gmail.com
+        .col-md-8.col-md-push-1.col-sm-12.col-sm-push-0.col-xs-12.col-xs-push-0
+          .row
+            form(action="/contact", method="post")
+              .col-md-6
+                .form-group
+                  input.form-control(name="name", value="", placeholder="Name", type="text", required="")
+              .col-md-6
+                .form-group
+                  input.form-control(name="email", value="", placeholder="Email", type="text", required="")
+              .col-md-12
+                .form-group
+                  textarea.form-control(name="message", cols="30", rows="7", placeholder="Message", required="")
+              .col-md-12
+                .form-group
+                  input.btn.btn-primary(name="submit", value="Send Message", type="submit")
+          if(typeof alertMessage !== "undefined")
+            if(!!postError)
+              .alert.alert-danger.alert-dismissable.fade.in
+                span= alertMessage
+                a.close(href="#", data-dismiss="alert", aria-label="close") &times;
+            else
+              .alert.alert-success.alert-dismissable.fade.in
+                span= alertMessage
+                a.close(href="#", data-dismiss="alert", aria-label="close") &times;
+  #map.animate-box(data-animate-effect='fadeIn')
 block script
-    script(type="text/javascript", src=`${googleMapsAPI}`)
-    script(type="text/javascript", src="/javascripts/google_map.js")
+  script(type="text/javascript", src=`${googleMapsAPI}`)
+  script(type="text/javascript", src="/javascripts/google_map.js")

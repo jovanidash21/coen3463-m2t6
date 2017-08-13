@@ -1,13 +1,13 @@
 aside#fh5co-hero.js-fullheight
-    .flexslider.js-fullheight
-        ul.slides
-            each sliderData, i in slidersData
-                li(style=`background-image: url(${sliderData.backgroundImageURL})`)
-                    .overlay-gradient
-                    .container
-                        .col-md-10.col-md-offset-1.text-center.js-fullheight.slider-text
-                            .slider-text-inner
-                                h2= sliderData.headerTitle
-                                h3= sliderData.headerSubtitle
-                                if sliderData.buttonMessage && sliderData.buttonLink
-                                    a.btn.btn-primary.btn-lg(href=`${sliderData.buttonLink}`)= sliderData.buttonMessage
+  .flexslider.js-fullheight
+    ul.slides
+      each sliderData, i in slidersData
+        li(style=`background-image: url(${sliderData.backgroundImageURL})`)
+          .overlay-gradient
+          .container
+            .col-md-10.col-md-offset-1.text-center.js-fullheight.slider-text
+              .slider-text-inner
+                h2= sliderData.headerTitle
+                h3= sliderData.headerSubtitle
+                if sliderData.buttonMessage && sliderData.buttonLink
+                  a.btn.btn-primary.btn-lg(href=`${sliderData.buttonLink}`)= sliderData.buttonMessage

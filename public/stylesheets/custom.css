@@ -1,54 +1,54 @@
 .img-responsive
 {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 .btn-primary
 {
-    background-color: rgb(0, 144, 14) !important;
-    border-color: rgb(0, 144, 14) !important;
-    color: rgb(255, 255, 255) !important;
+  background-color: rgb(0, 144, 14) !important;
+  border-color: rgb(0, 144, 14) !important;
+  color: rgb(255, 255, 255) !important;
 }
 #fh5co-header
 {
-    margin: 30px 0 0 0;
+  margin: 30px 0 0 0;
 }
 #fh5co-header nav ul li a
 {
-    color: rgb(0, 211, 7);
-    text-shadow: 0 0 3px rgba(0, 0, 0, 0.9);
+  color: rgb(0, 211, 7);
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.9);
 }
 #fh5co-header nav ul li.cta  a
 {
-    color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 #fh5co-header nav ul li.cta a:hover
 {
-    color: rgb(0, 211, 7);
-    text-shadow: 0 0 0 rgba(0, 0, 0, 0.8);
+  color: rgb(0, 211, 7);
+  text-shadow: 0 0 0 rgba(0, 0, 0, 0.8);
 }
 #fh5co-hero .flexslider .slides li
 {
-    background-attachment: fixed;
+  background-attachment: fixed;
 }
 #fh5co-hero .flexslider .slider-text > .slider-text-inner h2,
 #fh5co-hero .flexslider .slider-text > .slider-text-inner h3
 {
-    text-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
 #fh5co-hero .flexslider .slider-text > .slider-text-inner h2
 {
-    font-weight: bold;
-    margin: 0 0 5px 0;
-    text-transform: uppercase;
+  font-weight: bold;
+  margin: 0 0 5px 0;
+  text-transform: uppercase;
 }
 #fh5co-hero .flexslider .slider-text > .slider-text-inner h3
 {
-    color: rgb(255, 255, 255);
-    font-size: 45px;
-    font-weight: 400;
-    margin: 0 0 10px 0;
-    text-transform: lowercase;
+  color: rgb(255, 255, 255);
+  font-size: 45px;
+  font-weight: 400;
+  margin: 0 0 10px 0;
+  text-transform: lowercase;
 }
 #fh5co-why-us .item-block h3,
 .fh5co-services .item-block h3
@@ -96,91 +96,91 @@
 }
 .fh5co-cta h2
 {
-    color: rgb(255, 255, 255);
-    font-size: 40px;
-    font-weight: bold;
-    text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 .fh5co-cta h2 span
 {
-    color: rgb(184, 24, 12);
+  color: rgb(184, 24, 12);
 }
 .fh5co-cta .btn
 {
-    font-size: 24px;
+  font-size: 24px;
 }
 .fh5co-about,
 .fh5co-team
 {
-    padding: 100px 0 50px 0;
+  padding: 100px 0 50px 0;
 }
 .fh5co-team .team-avatar
 {
-    background-position: center center;
-    background-repeat: no-repeat;
-    border: 10px solid rgb(0, 144, 14);
-    border-radius: 50%;
-    height: 300px;
-    margin-bottom: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 300px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: 10px solid rgb(0, 144, 14);
+  border-radius: 50%;
+  height: 300px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
 }
 .nav-tabs-dropdown
 {
-    background-color: rgb(240, 240, 240);
-    border: 1px solid rgb(180, 180, 180);
-    border-radius: 10px;
-    margin-bottom: 15px;
-    padding: 20px;
+  background-color: rgb(240, 240, 240);
+  border: 1px solid rgb(180, 180, 180);
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 20px;
 }
 .nav-tabs-dropdown h3
 {
-    color: rgb(0, 144, 14);
-    font-weight: bold;
-    margin-bottom: 10px;
+  color: rgb(0, 144, 14);
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 .nav-tabs
 {
-    border-bottom: none;
+  border-bottom: none;
 }
 .nav-tabs li
 {
-    background-color: rgb(248, 248, 248);
-    border-radius: 10px;
-    margin-bottom: 1px;
-    margin-top: 1px;
+  background-color: rgb(248, 248, 248);
+  border-radius: 10px;
+  margin-bottom: 1px;
+  margin-top: 1px;
 }
 .nav-tabs li > a
 {
-    color: rgb(100, 100, 100);
-    margin: 0;
+  color: rgb(100, 100, 100);
+  margin: 0;
 }
 .nav-tabs li > a:hover
 {
-    background-color: rgb(33, 104, 33);
-    border-bottom: 1px solid rgb(33, 104, 33);
-    border-radius: 10px;
-    border-top: 1px solid rgb(33, 104, 33);;
-    color: rgb(255, 255, 255);
+  background-color: rgb(33, 104, 33);
+  border-bottom: 1px solid rgb(33, 104, 33);
+  border-radius: 10px;
+  border-top: 1px solid rgb(33, 104, 33);;
+  color: rgb(255, 255, 255);
 }
 .fh5co-services > .container img
 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 footer [class^="icon-"]
 {
-    font-size: 40px;
+  font-size: 40px;
 }
 @media screen and (max-width: 768px)
 {
-    #fh5co-hero .flexslider .slider-text > .slider-text-inner h3
-    {
-        font-size: 30px;
-    }
-    .fh5co-about,
-    .fh5co-team
-    {
-        padding: 48px 0 24px 0;
-    }
+  #fh5co-hero .flexslider .slider-text > .slider-text-inner h3
+  {
+    font-size: 30px;
+  }
+  .fh5co-about,
+  .fh5co-team
+  {
+    padding: 48px 0 24px 0;
+  }
 }

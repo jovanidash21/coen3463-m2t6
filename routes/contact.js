@@ -4,61 +4,61 @@ var nodemailer = require('nodemailer');
 
 var googleMapsAPI = 'https://maps.googleapis.com/maps/api/js?key=' + process.env.GOOGLE_MAPS_API_KEY;
 var slidersData = [
-    {
-        "backgroundImageURL":"/images/contact/slider_1.png",
-        "headerTitle":"Don't be shy and get in touch",
-        "headerSubtitle":"contact us now"
-    }
+  {
+    "backgroundImageURL":"/images/contact/slider_1.png",
+    "headerTitle":"Don't be shy and get in touch",
+    "headerSubtitle":"contact us now"
+  }
 ];
 
 
 router.get('/', function(req, res, next) {
-    res.render('contact', {
-        title: 'Contact | Screw-IT',
-        slidersData: slidersData,
-        googleMapsAPI: googleMapsAPI
-    });
+  res.render('contact', {
+    title: 'Contact | Screw-IT',
+    slidersData: slidersData,
+    googleMapsAPI: googleMapsAPI
+  });
 });
 
 router.post('/', function(req, res, next){
-    var transporter = nodemailer.createTransport({
-        service: 'gmail',
-        auth: {
-            type: 'OAuth2',
-            user: 'screwittechrepair@gmail.com',
-            clientId: process.env.GMAIL_CLIENT_ID,
-            clientSecret: process.env.GMAIL_CLIENT_SECRET,
-            refreshToken: process.env.GMAIL_REFRESH_TOKEN,
-            accessToken: process.env.GMAIL_ACCESS_TOKEN,
-        }
-    });
-    var mailOptions = {
-        from: 'Screw-IT | Visitor ✔ <screwittechrepair@gmail.com>',
-        to: 'screwittechrepair@gmail.com',
-        subject: 'Contact Us | Screw-IT ',
-        text: "Visitor's Contact Form Details... Name: "+req.body.name+" Email: "+req.body.email+" Message: "+req.body.message,
-        html: "<p>Visitor's Contact Form Details:</p><ul><li>Name: "+req.body.name+"</li><li>Email: "+req.body.email+"</li><li>Message: "+req.body.message+"</li></ul>"
-    };
-    transporter.sendMail(mailOptions, function(error, response) {
-        if (error) {
-            res.render('contact', {
-                title: 'Contact | Screw-IT',
-                alertMessage: 'Error occured! Message not sent. Please try again!',
-                postError: true,
-                slidersData: slidersData,
-                googleMapsAPI: googleMapsAPI
-            });
-        }
-        else {
-            res.render('contact', {
-                title: 'Contact | Screw-IT',
-                alertMessage: 'Message sent! Thank you.',
-                postError: false,
-                slidersData: slidersData,
-                googleMapsAPI: googleMapsAPI
-            });
-        }
-        transporter.close();
-    });
+  var transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      type: 'OAuth2',
+      user: 'screwittechrepair@gmail.com',
+      clientId: process.env.GMAIL_CLIENT_ID,
+      clientSecret: process.env.GMAIL_CLIENT_SECRET,
+      refreshToken: process.env.GMAIL_REFRESH_TOKEN,
+      accessToken: process.env.GMAIL_ACCESS_TOKEN,
+    }
+  });
+  var mailOptions = {
+    from: 'Screw-IT | Visitor ✔ <screwittechrepair@gmail.com>',
+    to: 'screwittechrepair@gmail.com',
+    subject: 'Contact Us | Screw-IT ',
+    text: "Visitor's Contact Form Details... Name: "+req.body.name+" Email: "+req.body.email+" Message: "+req.body.message,
+    html: "<p>Visitor's Contact Form Details:</p><ul><li>Name: "+req.body.name+"</li><li>Email: "+req.body.email+"</li><li>Message: "+req.body.message+"</li></ul>"
+  };
+  transporter.sendMail(mailOptions, function(error, response) {
+    if (error) {
+      res.render('contact', {
+        title: 'Contact | Screw-IT',
+        alertMessage: 'Error occured! Message not sent. Please try again!',
+        postError: true,
+        slidersData: slidersData,
+        googleMapsAPI: googleMapsAPI
+      });
+    }
+    else {
+      res.render('contact', {
+        title: 'Contact | Screw-IT',
+        alertMessage: 'Message sent! Thank you.',
+        postError: false,
+        slidersData: slidersData,
+        googleMapsAPI: googleMapsAPI
+      });
+    }
+    transporter.close();
+  });
 });
 module.exports = router;
