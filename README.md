@@ -35,9 +35,9 @@ use screw-it
 * Insert to the database the JSON files inside the data folder of this project.
 * Create a ```.env``` file. 
 * Copy and paste the texts in ```.env.example``` to ```.env``` and insert the values for each environment variables.
-* Open another terminal or cmd and start the server.
+* Open another terminal or cmd and run the project.
 ```
-npm start
+npm run build
 ```
 * Open a browser and visit ```localhost:3000```.
 * Run in dev mode.
