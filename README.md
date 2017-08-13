@@ -35,7 +35,6 @@ use screw-it
 * Insert to the database the JSON files inside the data folder of this project.
 * Create a ```.env``` file. 
 * Copy and paste the texts in ```.env.example``` to ```.env``` and insert the values for each environment variables.
-* Open app.js and replace ```process.env.MONGODB_URI``` with ```'mongodb://localhost:27017/screw-it'```.
 * Open another terminal or cmd and start the server.
 ```
 npm start
