@@ -1,7 +1,14 @@
 {
-  "name": "coen3453-m2t6",
+  "name": "screw-it",
   "version": "0.0.0",
+  "description": "",
   "private": true,
+  "author": "Jovani Warguez",
+  "main": "bin/www",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jovanidash21/screw-it.git"
+  },
   "scripts": {
     "start": "node ./bin/www",
     "build": "cross-env NODE_ENV=production node ./bin/www",
