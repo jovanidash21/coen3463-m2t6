@@ -1,10 +1,5 @@
-# Software Engineering - Module Two - Express
+# Screw-IT
 ---
-
-## Screenshot
-<p align="center">
-  <img src="https://raw.githubusercontent.com/jovanidash21/coen3463-m2t6/master/screenshot.png">
-</p>
 
 ## Prerequisite
 * [Node.js](https://nodejs.org/en/) installed.
@@ -15,13 +10,11 @@
 ## Installation
 * Clone or download this repository.
 ```
-git clone https://github.com/jovanidash21/coen3463-m2t6.git
+git clone https://github.com/jovanidash21/screw-it.git
 ```
-* Open routes/contact.js and replace ```process.env.CLIENT_ID```, ```process.env.CLIENT_SECRET```, and ```process.env.REFRESH_TOKEN``` with ```'{YOUR_CLIENT_ID}'```, ```'{YOUR_CLIENT_SECRET}'```, and ```'{YOUR_REFRESH_TOKEN}'``` respectively.
-* On the same file, replace ```process.env.GOOGLE_MAPS_API``` with ```'https://maps.googleapis.com/maps/api/js?key={YOUR_GOOGLE_MAPS_API_KEY}&sensor=false'```
 * Using a terminal or cmd, navigate to the project directory.
 ```
-cd coen3463-m2t6
+cd screw-it
 ```
 * Install node modules.
 ```
@@ -40,23 +33,27 @@ mongo
 use screw-it
 ``` 
 * Insert to the database the JSON files inside the data folder of this project.
+* Create a ```.env``` file. 
+* Copy and paste the texts in ```.env.example``` to ```.env``` and insert the values for each environment variables.
 * Open app.js and replace ```process.env.MONGODB_URI``` with ```'mongodb://localhost:27017/screw-it'```.
-* Open another terminal or cmd and run 'www' file inside the bin directory.
+* Open another terminal or cmd and start the server.
 ```
-node ./bin/www
+npm start
 ```
 * Open a browser and visit ```localhost:3000```.
+* Run in dev mode.
+```
+npm run dev
+```
+
+## NPM Scripts
+* ```npm start``` - start the server.
+* ```npm run build``` - run the project in production mode.
+* ```npm run dev - run the project in dev mode.
 
 ## Credits
 - [Bootstrap Theme](https://freehtml5.co/preview/?item=bold-free-website-template-using-bootstrap)
 - Images downloaded from Google
 
-## Connect
-- [Wordpress](https://jovaniwarguez.wordpress.com/)
-- [Facebook](https://facebook.com/jovani.cadornawarguez)
-- [Twitter](https://twitter.com/jovanidash21)
-- [Instagram](https://www.instagram.com/jovanidash21/)
-- [Google+](https://plus.google.com/u/0/104385173780051504413)
-- [LinkedIn](https://www.linkedin.com/in/jovani-warguez-827a8a11b?trk=nav_responsive_tab_profile_pic)
-- [YouTube](https://www.youtube.com/channel/UCNiVxhbJ6Ku9keIjkQX3RRQ)
-- [CodePen](http://codepen.io/jovanidash21/)
+## Website
+[Live Demo](https://screw-it-jovanidash21.herokuapp.com/)
