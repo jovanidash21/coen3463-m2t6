@@ -30,12 +30,15 @@ if ( process.env.NODE_ENV != 'production' ) {
 
 // load all models directory files
 fs.readdirSync(__dirname + '/models').forEach(function(filename) {
-    if (~filename.indexOf('.js')) require(__dirname + '/models/' + filename)
+  if (~filename.indexOf('.js')) require(__dirname + '/models/' + filename)
 });
 
 // mongoose configuration
+var mongooseOptions = {
+  useMongoClient: true
+};
 mongoose.Promise = global.Promise;
-mongoose.connect(process.env.MONGODB_URI, { useMongoClient: true });
+mongoose.connect(process.env.MONGODB_URI, mongooseOptions);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
